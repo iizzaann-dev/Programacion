@@ -1,0 +1,31 @@
+/*
+ * Descripción: ejemplos de tipos de variables
+ * Autor: Izan Rico Blanco
+ * Fecha: 22/09/2025
+ */
+package tiposVariables;
+
+public class EjemplosTipos {
+
+	public static void main(String[] args) {
+		int numAlumnos; //Declaramos la variable numAlumnos
+		numAlumnos = 0; //Asignamos la cantidad de alumnos a la variable numAlumnos
+		System.out.println("Valor de la variable: " + numAlumnos); //Demostramos lo que hay asignado en la variable numAlumnos
+
+		numAlumnos = 12;
+		System.out.println("Valor de la variable: " + numAlumnos);
+		
+		double alturaAlumno = 1.75;
+		System.out.println("La altura del alumno es: " + alturaAlumno, "cms");
+		
+		char letraDni = 'a';
+		System.out.println("La letra del DNI del alumno es: " + letraDni);
+		
+		String nombreAlumno = "Alberto";
+		System.out.println("El nombre del alumno es: " + nombreAlumno);
+		
+		
+		
+	}
+
+}

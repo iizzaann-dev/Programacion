@@ -1,0 +1,17 @@
+package OperadoresBasicos;
+
+public class EjOperadoresBasicos {
+
+	public static void main(String[] args) {
+		int dati1,dato2;
+		
+		dato1 = 5;
+		dato2= 4;
+		
+		int suma;
+		suma = dato1+dato2
+		system.out.println("La suma es: " + suma);
+
+	}
+
+}
