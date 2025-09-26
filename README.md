@@ -1,21 +1,21 @@
-<h1 align="center">Buenas, aquí Izan</h1>
-<h3 align="center">Alumno en el IES Playamar, estudiando Desarrollo de Aplicaciones Web</h3>
+<h1 align="center">Buenas👋 Aquí Izan</h1>
+<h3 align="center">Alumno en el IES Playamar</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=iizzaann-dev&label=Profile%20views&color=0e75b6&style=flat" alt="iizzaann-dev" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=iizzaann-dev" alt="iizzaann-dev" /></a> </p>
 
-- Actualmente estoy estudiando **Desarrollo de Aplicaciones Web**
+- 🔭 Actualmente estoy estudiando **Desarrollo de Aplicaciones Web**
 
-- Quizás estudie: **Ingeniería informática**
+- 🌱 Quiero estudiar en el futuro: **Desarrollo de Aplicaciones Multiplataforma**
 
-- Quiero estudiar en el futuro: **Desarrollo de Aplicaciones Multiplataforma**
+- 👯 Quizás estudie: **Ingeniería informática**
 
-- Puedes contactar conmigo mediante: **iricbla2402@g.educaand.es**
+- 📫 Puedes contactar conmigo mediante: **iricbla2402@g.educaand.es**
 
-- Algo curioso sobre mi: **Me gusta programar aunque tarde tres horas en encontrar un error en el código**
+- ⚡ Algo curioso de mi: **Me gusta programar aunque tarde tres horas en encontrar un error en el código*
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me: iizzaann-dev</h3>
 <p align="left">
 </p>
 
