@@ -13,7 +13,7 @@
 
 - 📫 Puedes contactar conmigo mediante: **iricbla2402@g.educaand.es**
 
-- ⚡ Algo curioso de mi: **Me gusta programar aunque tarde tres horas en encontrar un error en el código*
+- ⚡ Algo curioso de mi: **Me gusta programar aunque tarde tres horas en encontrar un error en el código**
 
 <h3 align="left">Connect with me: iizzaann-dev</h3>
 <p align="left">
