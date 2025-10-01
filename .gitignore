@@ -1,18 +1,15 @@
-# Archivos de Eclipse
+# Ignorar solo la metadata de Eclipse
 .metadata/
+JavaDocs/.metadata/
+
+# Archivos comunes de Eclipse
 *.classpath
 *.project
 *.settings/
 
-# Archivos generados
+# Archivos generados (compilación, temporales, etc.)
 bin/
 build/
 target/
-
-# Archivos del sistema operativo
-.DS_Store
-Thumbs.db
-
-# Archivos temporales
 *.log
 *.tmp
