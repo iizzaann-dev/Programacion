@@ -1,15 +1,6 @@
-# Ignorar solo la metadata de Eclipse
+# Ignorar carpetas de Eclipse
 .metadata/
 JavaDocs/.metadata/
-
-# Archivos comunes de Eclipse
 *.classpath
 *.project
 *.settings/
-
-# Archivos generados (compilación, temporales, etc.)
-bin/
-build/
-target/
-*.log
-*.tmp
