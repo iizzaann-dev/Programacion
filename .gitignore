@@ -1,0 +1,17 @@
+# Ignorar carpetas de Eclipse
+.metadata/
+JavaDocs/.metadata/
+
+# Ignorar archivos de configuración de Eclipse
+*.classpath
+*.project
+*.settings/
+
+# Ignorar carpetas de compilación
+bin/
+build/
+target/
+
+# Ignorar archivos temporales
+*.log
+*.tmp
