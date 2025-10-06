@@ -17,10 +17,6 @@ public class Ejercicio2 {
 		System.out.println("Ingresa el nombre del equipo: ");
 		nombreEquipo = teclado.nextLine();
 		
-		int fundacion;
-		System.out.println("Ingresa el año de fundación del equipo: ");
-		fundacion = teclado.nextInt();
-		
 		String nombreEstadio;
 		System.out.println("Ingresa el nombre del estadio: ");
 		nombreEstadio = teclado.nextLine();
@@ -29,9 +25,16 @@ public class Ejercicio2 {
 		System.out.println("Ingresa el nombre del capitán del equipo");
 		nombreCapitan = teclado.nextLine();
 		
+		int fundacion;
+		System.out.println("Ingresa el año de fundación del equipo: ");
+		fundacion = teclado.nextInt();
 		
 		
-
+		System.out.println("**********************************************************************************************");
+		System.out.println("*******Nombre del equipo: " + nombreEquipo + "************************************************");
+		System.out.println("*******Fundado en: " + fundacion + "***********************************************************");
+		System.out.println("*******Estadio: " + nombreEstadio + "**********************************************************");
+		System.out.println("*******Capitán: " + nombreCapitan + "**********************************************************");
 	}
 
 }
