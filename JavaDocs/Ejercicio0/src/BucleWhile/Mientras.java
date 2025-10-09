@@ -9,12 +9,13 @@ public class Mientras {
 		
 		int num, suma = 0;
 		int contador = 0;
+		//suma = num;
 		
 		System.out.println("Por favor, ingresa un número: ");
 		num = teclado.nextInt();
 		
-		while (num!= 0) {						//También se puede hacer con un while (num !=0 && contador < 0)
-			suma = suma + num;					//Acumulador
+		while (num!= 0) {						
+			suma = suma + num;					
 			contador = contador + 1;
 			if (contador == 8){
 				break;
@@ -28,3 +29,13 @@ public class Mientras {
 	}
 
 }
+
+
+
+/*También se puede hacer con un 
+while (num !=0 && contador <= 0){
+System.out.println("Dame un número:");
+num = teclado.nextInt();
+contador = contador + 1;
+suma = suma + num;
+} */
