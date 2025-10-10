@@ -17,6 +17,7 @@ public class EjercicioResueltoWhile {
 		num2 = teclado.nextInt();
 		
 		
+		
 		if (num1 == num2) {
 			System.out.println("Los números son iguales, se termina el programa");
 			
