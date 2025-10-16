@@ -1,5 +1,5 @@
 /*
- * Descripció:
+ * Descripción:
  * Autor: Izan Rico Blanco
  * Fecha: 01/10/2025
  */
