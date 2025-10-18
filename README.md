@@ -32,9 +32,10 @@
 ---
 
 ### Repository Stats ⚙️
+### Repository Stats ⚙️
 <p align="center">
 <a href="https://github.com/iizzaann-dev/programacion">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=iizzaann-dev&repo=programacion&theme=radical" alt="programacion repo" />
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=iizzaann-dev&repo=programacion&theme=radical&cache_seconds=60" alt="programacion repo" />
 </a>
 <br>
 
@@ -43,6 +44,7 @@
 <img src="https://img.shields.io/github/issues/iizzaann-dev/programacion?style=for-the-badge&color=yellow" alt="Issues" />
 <img src="https://img.shields.io/github/stars/iizzaann-dev/programacion?style=for-the-badge&color=orange" alt="Stars" />
 </p>
+
 
 ---
 
