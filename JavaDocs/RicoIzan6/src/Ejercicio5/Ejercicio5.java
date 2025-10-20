@@ -6,16 +6,16 @@
 
 package Ejercicio5;
 
-import java.util.Scanner;
+import java.util.Scanner;																										//Importamos la variable escaner
 
 public class Ejercicio5 {
 
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		
+																																//Declaramos todas las variables
 		int num1, contadorCeros = 0, contadorPositivos = 0, contadorNegativos = 0, sumaPositivos = 0, sumaNegativos = 0; 
 	    double mediaPositivos, mediaNegativos;
-	    
+	    																														//Realizamos las condiciones y bucles
 
 		for (int contador = 0; contador <10; contador = contador +1) {
 			System.out.println("Por favor, ingresa el un número: ");
@@ -32,29 +32,26 @@ public class Ejercicio5 {
 			}
 		}
 		
+																																//Calculamos las medias dependiendo de las condiciones que nos de.
 		
-		if (contadorPositivos == 0 && contadorNegativos != 0) {
-			mediaNegativos = (double)sumaNegativos / contadorNegativos;
-			System.out.println("De los 10 números ingresados, has ingresado " + contadorPositivos + " números positivos, " + contadorNegativos + " numeros negativos, y " + contadorCeros + " ceros.");
-			System.out.println("La medía de los números positivos es 0 y la de los números negativos es " + mediaNegativos);
-		}
-		else if (contadorPositivos != 0 && contadorNegativos == 0) {
+		if (contadorPositivos > 0) {
 			mediaPositivos = (double)sumaPositivos / contadorPositivos;
-			System.out.println("De los 10 números ingresados, has ingresado " + contadorPositivos + " números positivos, " + contadorNegativos + " numeros negativos, y " + contadorCeros + " ceros.");
-			System.out.println("La medía de los números positivos es " + contadorPositivos + " y la de los números negativos es 0");
+			System.out.println("Has ingresado " + contadorPositivos + " números positivos y su media es: " + mediaPositivos);
+		}else {
+			System.out.println("No se han ingresado números positivos, por lo que no se puede calcular la media.");
 		}
-		else if (contadorPositivos == 0 && contadorNegativos == 0) {
-			System.out.println("De los 10 números ingresados, has ingresado " + contadorPositivos + " números positivos, " + contadorNegativos + " numeros negativos, y " + contadorCeros + " ceros.");
-			System.out.println("La medía de los números positivos es 0 y la de los números negativos es 0");
-		}
-		else {
-			mediaPositivos = (double)sumaPositivos / contadorPositivos;
+		
+		if (contadorNegativos > 0) {
 			mediaNegativos = (double)sumaNegativos / contadorNegativos;
-			System.out.println("De los 10 números ingresados, has ingresado " + contadorPositivos + " números positivos, " + contadorNegativos + " numeros negativos, y " + contadorCeros + " ceros.");
-			System.out.println("La media de los números positivos ingresados es " + mediaPositivos + " y la de los números negativos es " + mediaNegativos);
+			System.out.println("Has ingresado " + contadorNegativos + " números negativos y su media es: " + mediaNegativos);
+		}else {
+			System.out.println("No se han ingresado números negativos, por lo que no se puede calcular la media.");
 		}
 		
-		
+		System.out.println("Has ingresado " + contadorCeros + " ceros.");
 	}
-
+		
+		
 }
+
+
