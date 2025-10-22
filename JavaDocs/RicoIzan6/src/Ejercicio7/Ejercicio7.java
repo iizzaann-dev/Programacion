@@ -14,14 +14,13 @@ public class Ejercicio7 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner (System.in);
 		
+		int numRandom, entradaUsuario;					//Declaración de variables
 		
-		int numRandom, entradaUsuario;
-		
-		numRandom = (int)(Math.random() * 50);
+		numRandom = (int)(Math.random() * 50);			//Creamos un número entre el 0 y el 50
 		System.out.println("Ingresa un número: ");
 		entradaUsuario = teclado.nextInt();
 		
-		
+														//Realizamos las condiciones
 		while (entradaUsuario != numRandom) {
 			if (entradaUsuario < numRandom) {
 				System.out.println("Ingresa un número más alto");
