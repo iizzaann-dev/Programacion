@@ -28,24 +28,21 @@ public class operaciones_cadenas {
 		// Mostrar la segunda palabra de la cadena
 		String [] palabras = cadena.split(" ");
 		String segundaPalabra = palabras[1];
-		if(palabras[1].isEmpty()) {
-			segundaPalabra = palabras[1];
-			System.out.println("La segunda palabra de la cadena es: " + segundaPalabra);
-		}else {
-			System.out.println("La cadena de palabras no pose dos palabras.");
-		}
+		System.out.println("La segunda palabra de la cadena es: " + segundaPalabra);
 		
 		// Mostrar la cadena con la primera letra y la última en mayuscula
 		
-		//primeraLetra = Character.toUpperCase(cadena.charAt(0));
-		//ultimaLetra = Character.toUpperCase(cadena.charAt(longitud - 1));
+						//primeraLetra = Character.toUpperCase(cadena.charAt(0));
+						//ultimaLetra = Character.toUpperCase(cadena.charAt(longitud - 1));
 		
 		String primLetra = cadena.substring(0,1);
 		primLetra = primLetra.toUpperCase();
 		
-		String ultLetra = cadena.substring(longitud -2, longitud - 1);
+		String ultLetra = cadena.substring(longitud - 1, longitud );
 		ultLetra = ultLetra.toUpperCase();
+		String medio = cadena.substring(1, longitud - 1);
 		
+		System.out.println(primLetra + medio + ultLetra);
 	}
 
 }
