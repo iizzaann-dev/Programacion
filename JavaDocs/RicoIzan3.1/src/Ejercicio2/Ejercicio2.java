@@ -4,7 +4,7 @@
  * Fecha: 22/10/2025
  */
 
-package RicoIzan2;
+package Ejercicio2;
 
 import java.util.Scanner;
 
