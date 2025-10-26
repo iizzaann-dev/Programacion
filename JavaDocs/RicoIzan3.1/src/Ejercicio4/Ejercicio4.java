@@ -15,17 +15,24 @@ public class Ejercicio4 {
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		double suma = 0;
+		double sumaPositivo = 0;
+		double sumaNegativo = 0;
 		double [] numero;
 		numero = new double[10];
 		
 		System.out.println("Ingresa un número: ");
 		for(int posicion = 0; posicion < 10; posicion++) {
 				numero[posicion] = teclado.nextInt();
-				suma = suma +numero[posicion]; 
+				if (numero[posicion] > 0) {
+					sumaPositivo = sumaPositivo + numero[posicion]; 
+				}
+				else {
+					sumaNegativo = sumaNegativo + numero[posicion];
+				}
+				
 				
 		}
-		System.out.print(suma);
+		System.out.print("La suma de números positivos es: " + sumaPositivo + " y la suma de números negativos es: "+ sumaNegativo);
 	}
 
 }
