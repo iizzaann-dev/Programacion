@@ -14,17 +14,29 @@ public class Ejercicio3 {
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		double suma = 0;
+		
 		double [] numero;
 		numero = new double[10];
 		
 		System.out.println("Ingresa un número: ");
 		for(int posicion = 0; posicion < 10; posicion++) {
 				numero[posicion] = teclado.nextInt();
-				suma = suma +numero[posicion]; 
 				
 		}
-		System.out.print(suma);
+		double maximo = numero[0];
+		double minimo = numero[0];		
+		
+		for (int contador = 1; contador < numero.length; contador++) {
+			
+			if (numero[contador] > maximo){
+				maximo = numero[contador];
+			}
+			
+			if (numero[contador] < minimo) {
+				minimo = numero[contador];
+			}
+		}
+		System.out.println("El número más grande de todos los introducidos es: " + maximo + " y el número más pequeño es: " + minimo);
 	}
 
 }
