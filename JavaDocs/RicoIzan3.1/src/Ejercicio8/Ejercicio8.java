@@ -19,6 +19,7 @@ public class Ejercicio8 {
 		double [] numero;
 		numero = new double [100];
 		double numUsuario;
+		int contador = 0;
 		
 		for (int posicion = 0; posicion < numero.length; posicion++) {
 			numero[posicion] = Math.random();
@@ -26,12 +27,23 @@ public class Ejercicio8 {
 		System.out.println("Ingresa un número para saber cuantos valores son superiores o iguales dentro del array: ");
 		numUsuario = teclado.nextDouble();
 		
+		
 		for (int posicion = 0; posicion < numero.length; posicion++) {
 			if (numero[posicion] == numUsuario || numero[posicion] >= numUsuario) {
-				double suma = 0; 
-				suma =  suma + numero[posicion];
-				System.out.println("Los números iguales o superiores a " + numUsuario + " son: " + suma);
+				contador++;
+				System.out.println("Los números iguales o superiores a " + numUsuario + " son: " + numero[posicion]);
+				
 			}
+			
 		}
+		System.out.println("Son " + contador + " números en total.");
+		
+
+
+		
+
+
+
+		
 	}
 }
