@@ -18,8 +18,8 @@ public class Ejercicio10 {
 		Scanner teclado = new Scanner(System.in);
 		
 		double [] alturas;
-		double numUsuario, suma = 0 , max, min;
-		int numArray, contadorArriba, contadorAbajo;
+		double numUsuario, suma = 0 , max = 0, min = 0, media;
+		int numArray, contadorArriba = 0, contadorAbajo = 0, contador = 0;
 		
 		
 		System.out.print("Por favor, dinos la cantidad de alturas que vas a ingresar: ");
@@ -30,10 +30,39 @@ public class Ejercicio10 {
 			System.out.println("Ingresa un valor para la " + (posicion + 1) + "ª posicion (en metros): ");
 			alturas[posicion] = teclado.nextDouble();
 			suma = suma + alturas[posicion];
+			contador++;
 			
 
 		}
+		media = suma/contador;
+		
+		for (int i = 1; i < alturas.length; i++) {
+					
+			if (alturas[i] > max){
+				max = alturas[i];
+			}
+					
+			if (alturas[i] < min) {
+				min = alturas[i];
+			}
+			
+			if (alturas[i] > media){
+				contadorArriba++;
+			}
+			
+			if (alturas[i] < media) {
+				contadorAbajo--;
+			}
+					
+		}
+
+		System.out.println("La altura media es: " + media + " metros");
+		System.out.println("La altura máxima es: " + max + " metros");
+		System.out.println("La altura mínima es: " + min + " metros");
+		System.out.println("La cantidad de alturas por encima de la media es: " + contadorArriba);
+		System.out.println("La cantidad de alturas por debajo de la media es: " + contadorAbajo);
+
+		
 
 	}
-
 }
