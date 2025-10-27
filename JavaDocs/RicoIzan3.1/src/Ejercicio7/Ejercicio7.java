@@ -24,7 +24,12 @@ public class Ejercicio7 {
 		System.out.println("Ingresa el último valor del array: ");
 		Q = teclado.nextInt();
 		
-		numero = new int [];
+		numero = new int [(Q+1)-(P)];	
+		
+		for(int posicion = 0; posicion < numero.length; posicion++) {
+			int valor = P + posicion;
+			System.out.println(valor);
+		}
 		
 		
 	}
