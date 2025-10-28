@@ -12,12 +12,23 @@ public class Ejercicio6 {
 
 	public static void main(String[] args) {
 		
-		Scanner teclado = new Scanner (System.in);
+		Scanner teclado = new Scanner(System.in);
+	
+		int num1, contadorNegativos = 0;
 		
-		int num1;
-		
-		for (int contador = 0)
-		System.out.println("Ingresa ")
+		for (int contador = 0; contador < 5; contador++) {
+			System.out.println("Ingresa un número (que no sea cero): ");
+			num1 = teclado.nextInt();
+			if (num1 == 0) {
+				System.out.println("Has ingresado un 0, por favor ingresa otro: ");
+				contador--;
+			}
+			if (num1 < 0) {
+				contadorNegativos++;
+			}
+			
+		}
+		System.out.print("Has introducido " + contadorNegativos + " números negativos.");
 	}
 
 }
