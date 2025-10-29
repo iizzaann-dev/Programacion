@@ -16,7 +16,8 @@ public class Ejercicio8 {
 
 		Scanner teclado = new Scanner(System.in);
 		
-		int num, contadorPositivos = 0, contadorNegativos = 0;
+		int num, contadorPositivos = 0, contadorNegativos = 0, comprobador = 0;
+		
 		
 		do {
 			System.out.println("Ingresa un número (ingresa 0 para terminar el programa): ");
@@ -27,11 +28,17 @@ public class Ejercicio8 {
 			}
 			else if (num < 0) {
 				contadorNegativos++;
+				comprobador = 1;
 			}
 		}while(num != 0);
 		
+		if (comprobador == 1) {
+			System.out.println("Has ingresado " + contadorPositivos + " números positivos y " + contadorNegativos + " numeros negativos.");
+		}else {
+			System.out.println("Has ingresado " + contadorPositivos + " números positivos");
+
+		}
 		
-		System.out.println("Has ingresado " + contadorPositivos + " números positivos y " + contadorNegativos + " numeros negativos.");
 
 		
 		

@@ -20,7 +20,7 @@ public class Ejercicio6 {
 			System.out.println("Ingresa un número (que no sea cero): ");
 			num1 = teclado.nextInt();
 			if (num1 == 0) {
-				System.out.println("Has ingresado un 0, por favor ingresa otro: ");
+				System.out.println("Has ingresado un 0, por favor ingresa otro número: ");
 				contador--;
 			}
 			if (num1 < 0) {
