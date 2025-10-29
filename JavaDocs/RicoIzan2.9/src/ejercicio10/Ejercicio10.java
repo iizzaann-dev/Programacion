@@ -1,7 +1,7 @@
 /* Descripción:
  * Programa que solicita una secuencia de notas del 0 al 10 hasta introducir -1,
  * y determina si se introdujo alguna nota con valor 10.
- * Autor: Cristian González Mateo
+ * Autor: Izan Rico Blanco
  * Fecha: 18/10/25
  */
 package ejercicio10;

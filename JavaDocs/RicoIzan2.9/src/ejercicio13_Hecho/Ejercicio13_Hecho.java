@@ -1,14 +1,14 @@
 /* Descripción:
  * Programa donde el usuario piensa un número del 1 al 100 y el ordenador intenta adivinarlo,
  * recibiendo indicaciones de "mayor", "menor" o "igual" para ajustar su propuesta.
- * Autor: Cristian González Mateo
+ * Autor: Izan Rico Blanco
  * Fecha: 18/10/25
  */
 package ejercicio13_Hecho;
 
 import java.util.Scanner;
 
-public class Ejercicio13 {
+public class Ejercicio13_Hecho {
 
 	public static void main(String[] args) {
 		

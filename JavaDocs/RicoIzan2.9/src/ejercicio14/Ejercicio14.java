@@ -1,7 +1,7 @@
 /* Descripción:
  * Programa que solicita una cantidad de euros (múltiplo de 5) y calcula la distribución mínima 
  * de billetes de 500, 200, 100, 50, 20, 10 y 5 euros para esa cantidad.
- * Autor: Cristian González Mateo
+ * Autor: Izan Rico Blanco
  * Fecha: 18/10/25
  */
 package ejercicio14;
