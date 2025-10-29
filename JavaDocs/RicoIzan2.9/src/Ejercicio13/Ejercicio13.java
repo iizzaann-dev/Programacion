@@ -16,7 +16,20 @@ public class Ejercicio13 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
+		String numUsuario;
+		int numOrdenador;
+		numOrdenador = (int) (Math.random() * 100 + 1);
 		
+		System.out.println("Buenas, el ordenador intentará averiguar el número que quieras entre el 1 y el 100: ");
+		
+		do {
+			System.out.println("El número en el que piensas es mayor o menor a : " + numOrdenador);
+			numUsuario = teclado.nextLine();
+			
+
+			
+		}while(numUsuario != numUsuario);
+
 
 	}
 
