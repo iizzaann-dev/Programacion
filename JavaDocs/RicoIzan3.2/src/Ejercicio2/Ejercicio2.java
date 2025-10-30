@@ -15,25 +15,24 @@ public class Ejercicio2 {
 		Scanner teclado = new Scanner(System.in);
 		
 		int [][] tablas;
-		int contador = 0, numeros = 0;
+		int contador = 0, numeros = 1;
 		
 		tablas = new int [10][10];
 		
 		for (int filas = 0; filas < tablas.length; filas++) {
-			for (int columnas = 0; columnas < tablas[filas].length; columnas++) {
-				numeros = numeros + 10;
-				contador++;
-				do {
-					if(contador == 1) {
-						numeros = 0;
-					}
-				}while (contador < 10);
-				tablas [filas][columnas] = contador;
-				System.out.println(tablas[filas][columnas]);
-				System.out.println("La tabla del " + contador + " es: ");
+			
+			filas = contador;
+			contador++;
+			numeros = 0;
+			System.out.println("");
+			System.out.print("La tabla de multiplicar del " + contador + " es: ");
+			
 
+			for (int columnas = 0; columnas < tablas[filas].length; columnas++) {
+				numeros++;
+				tablas[filas][columnas] = contador * numeros;			
+				System.out.print(contador + " * " +  numeros + " es: " + tablas[filas][columnas] + ", ");
 			}
 		}
 	}
-
 }
