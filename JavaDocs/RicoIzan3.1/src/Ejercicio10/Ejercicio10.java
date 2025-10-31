@@ -18,7 +18,7 @@ public class Ejercicio10 {
 		Scanner teclado = new Scanner(System.in);
 		
 		double [] alturas;
-		double numUsuario, suma = 0 , max = 0, min = 0, media;
+		double suma = 0 , max = 0, min = 0, media;
 		int numArray, contadorArriba = 0, contadorAbajo = 0, contador = 0;
 		
 		
