@@ -17,10 +17,8 @@ public class Ejercicio4 {
 		
 		String[] nombresAsignaturas = {"Lengua", "Matemáticas", "Inglés", "Filosofía", "Deporte"};
 		double [][] notas;
-		int contadorAlumnos = 0, contadorAsignaturas = 0;
 		final int asignaturas = 5, alumnos = 4;
 		double [] media, suma, maximo, minimo;
-		
 		
 		notas = new double [alumnos][asignaturas];
 		suma = new double[4];
@@ -46,8 +44,14 @@ public class Ejercicio4 {
 				media[filas] = suma[filas] / 5;
 			}
 		}
-		
-		System.out.println("La nota media del alumno " + notas[alumnos] + " es");
-
+		System.out.println("");
+		System.out.println("----- RESULTADOS -----");
+        for (int contador = 0; contador < alumnos; contador++) {
+            System.out.println("Alumno " + (contador + 1) + ":");
+            System.out.println("  Nota media: " + media[contador]);
+            System.out.println("  Nota máxima: " + maximo[contador]);
+            System.out.println("  Nota mínima: " + minimo[contador]);
+            System.out.println();
+        }
 	}
 }
