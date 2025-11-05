@@ -48,7 +48,7 @@ public class Temperatura {
 			}while(temperatura[mes][diaTemp10] > 10);
 			System.out.println("Para el mes " + mes + " el primer día con menos de 10 grados es el "+ diaTemp10 + " día.");
 		}
-		
-	}
+		//Si queremos que nos muestre un contenido de un array unidimensional desde un array bidimensional seria mes[meses], siendo mes el numero del mes que queremos mostrar, y siendo meses los nombres de los meses
+	}	
 }
 
