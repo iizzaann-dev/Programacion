@@ -11,7 +11,7 @@ public class Temperatura {
 		final int TOTAL_DIAS =30;
 		int diaMasCalor = 1, tempMasAlto, diaTemp10;
 		int[][] temperatura;  											//Declaramos un array bidimensional
-		temperatura = new int[TOTAL_MESES][TOTAL_DIAS];   				//Inicialización
+		String [] meses = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};		temperatura = new int[TOTAL_MESES][TOTAL_DIAS];   				//Inicialización
 																		
 		for(int mes=0; mes< temperatura.length; mes++) {				//Nos movemos por los meses
 			for(int dia = 0; dia < temperatura[mes].length; dia++) {							//Nos movemos por los días
