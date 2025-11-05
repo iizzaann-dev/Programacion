@@ -20,25 +20,36 @@ public class Ejercicio5 {
 		Scanner teclado = new Scanner(System.in);
 		
 		double brecha [][];
-		int genero;
-		double sueldo = 0;
-		int n;
+		
+		int n, contadorHombres = 0, contadorMujeres = 0;
+		
+		double sumaHombres = 0, sumaMujeres = 0; 
+		double mediaHombres = 0, mediaMujeres = 0;
+		
 		System.out.println("Ingresa la cantidad de personas que van a completar la información del array: ");
 		n = teclado.nextInt();
 		
 		brecha = new double [n][2];
 		
 		for (int filas = 0; filas < brecha.length; filas++) {
-			for (int columnas = 0; columnas < brecha[filas].length; columnas++)
 			System.out.println("Por favor, ingresa el genero del trabajador (0 para varón y 1 para mujer): ");
-			genero = teclado.nextInt();
+			brecha[filas][0] = teclado.nextInt();
 			System.out.println("De acuerdo, ahora ingresa lo que cobra el trabajador/a: ");
+			brecha[filas][1] = teclado.nextDouble();
 			
-
+			if (brecha[filas][0] == 0) {
+				sumaHombres = sumaHombres + brecha[filas][1];
+				contadorHombres++;
+			}
+			if (brecha[filas][0] == 1) {
+				sumaMujeres = sumaMujeres + brecha[filas][1];
+				contadorMujeres++;
+			}
 		}
-		
+		mediaHombres = sumaHombres / contadorHombres;
+		mediaMujeres = sumaMujeres / contadorMujeres;
 
-
+		System.out.println("El sueldo medio de las mujeres es: " + mediaMujeres + " y el de los hombres es: " + mediaHombres);
 	}
 
 }
