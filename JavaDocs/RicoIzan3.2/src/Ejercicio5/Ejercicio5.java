@@ -20,10 +20,23 @@ public class Ejercicio5 {
 		Scanner teclado = new Scanner(System.in);
 		
 		double brecha [][];
-		double genero = 0;
+		int genero;
 		double sueldo = 0;
-		brecha = new double [genero][sueldo];
-		System.out.println("Por favor, ingresa tu genero (0 para varón y 1 para mujer): ");
+		int n;
+		System.out.println("Ingresa la cantidad de personas que van a completar la información del array: ");
+		n = teclado.nextInt();
+		
+		brecha = new double [n][2];
+		
+		for (int filas = 0; filas < brecha.length; filas++) {
+			for (int columnas = 0; columnas < brecha[filas].length; columnas++)
+			System.out.println("Por favor, ingresa el genero del trabajador (0 para varón y 1 para mujer): ");
+			genero = teclado.nextInt();
+			System.out.println("De acuerdo, ahora ingresa lo que cobra el trabajador/a: ");
+			
+
+		}
+		
 
 
 	}
