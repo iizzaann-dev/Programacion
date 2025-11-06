@@ -45,7 +45,7 @@ public class Ejercicio5 {
 				sumaMujeres = sumaMujeres + brecha[filas][1];
 				contadorMujeres++;
 			}
-		}
+		}//Asopla
 		mediaHombres = sumaHombres / contadorHombres;
 		mediaMujeres = sumaMujeres / contadorMujeres;
 
