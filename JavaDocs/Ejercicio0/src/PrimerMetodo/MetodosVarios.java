@@ -9,6 +9,12 @@ public class MetodosVarios {
 	
 	// Calcula si numero es par devolviendo un valor booleano
 	public static void espar(int numero) {
+		boolean par ;
 		
+		if (numero % 2 == 0) {
+			par = true;
+		}else {
+			par = false;
+		}
 	}
 }
