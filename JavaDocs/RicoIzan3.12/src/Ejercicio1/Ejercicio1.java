@@ -15,17 +15,20 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
+		System.out.println("Ingresa una cadena de carácteres: ");				
+																			
+		String cadena = teclado.nextLine();							//Pedimos la cadena de caracteres
 		
-		System.out.println("Ingresa una cadena de carácteres: ");
-
-		String cadena = teclado.nextLine();
+		String [] palabras = cadena.split(" ");						//Separamos la cadena de caracteres en palabras mediante el delimitador (espacios)
+			
 		
-		for (int contador = 0; contador < cadena.length(); contador++) {
-			char letras = cadena.charAt(contador);
-			System.out.println(letras);
+		for(String palabra : palabras) {							//Bucle que muestra las palabras separadas por espacios en una linea nueva
+			System.out.println(palabra);
 
+		}
+		
 		}
 		
 	}
 
-}
+
