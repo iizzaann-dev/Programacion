@@ -41,8 +41,8 @@ public class Ejercicio3 {
 	public static String extraerLetras (String letras) {
 		String letra = "";
 		letra = letras.substring(0,3);
-		letra.toUpperCase();
-		System.out.println(letra);
+		letra = letra.toUpperCase();
+		
 
 		return letra;
 	}
