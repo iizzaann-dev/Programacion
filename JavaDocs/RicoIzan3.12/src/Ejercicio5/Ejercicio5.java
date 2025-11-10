@@ -20,13 +20,20 @@ public class Ejercicio5 {
 		String [] cadenaInvertida;
 		
 		
+		
 		System.out.println("Ingresa una cadena de texto para averiguar si es palindromo o no: ");
 		cadena = teclado.nextLine();
+		cadena = cadena.toLowerCase();
+		cadenaInvertida = new String[cadena.length()];
 		
-		
-		for(int contador = 0; contador < cadenaInvertida.length; contador++) { //hay que hacer un vector para almacenar toda la cadena de texto
+		for(int contador = 0; contador < cadenaInvertida.length; contador++) { 
+			cadenaInvertida[contador] = cadena.substring(contador);
+			System.out.print(cadenaInvertida);
+
+			
+			//hay que hacer un vector para almacenar toda la cadena de texto
 			// y poner el contador en la ultima posicion, he ir reduciendo el valor del contador para darle la vuelta al array y sacar si es un palindromo
-			System.out.print(cadena.charAt(contador));
+			System.out.print(cadena.charAt(contador) + " ");
 
 		}
 		
