@@ -26,16 +26,28 @@ public class Ejercicio4 {
 		cadena = cadena.toLowerCase();
 		
 		for (int contador = 0; contador < cadena.length(); contador ++) {
-			if (cadena.contains("a")) {
+			switch (cadena.charAt(contador)) {
+			case 'a':
 				contadorA++;
-			}else if (cadena.contains("e")) {
+				break;
+				
+			case 'e':
 				contadorE++;
-			}else if (cadena.contains("i")) {
+				break;
+				
+			case 'i':
 				contadorI++;
-			}else if (cadena.contains("o")) {
+				break;
+				
+			case 'o':
 				contadorO++;
-			}else if (cadena.contains("u")) {
+				break;
+				
+			case 'u':
 				contadorU++;
+				break;
+			
+				default:
 			}
 		}
 		System.out.println("La cadena de texto " + cadena + " contiene: ");
