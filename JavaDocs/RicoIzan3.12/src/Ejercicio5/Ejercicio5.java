@@ -21,22 +21,27 @@ public class Ejercicio5 {
 		
 		
 		
-		System.out.println("Ingresa una cadena de texto para averiguar si es palindromo o no: ");
-		cadena = teclado.nextLine();
-		cadena = cadena.toLowerCase();
-		cadena = cadena.replace(" ", "");
+		System.out.println("Ingresa una cadena de texto para averiguar si es palindromo o no: ");		
+		cadena = teclado.nextLine();													//Pedimos la cadena de texto
+		cadena = cadena.toLowerCase();													//Ponemos la cadena de texto en minuscula
+		cadena = cadena.replace(" ", "|");												//Reemplazamos los espacios por |
+													
 		
 		
-		for(int contador = cadena.length() - 1; contador >= 0; contador--) { 
-			cadenaInvertida = cadenaInvertida + cadena.charAt(contador);
+		for(int contador = cadena.length() - 1; contador >= 0; contador--) { 			//Realizamos el bucle para invertir la palabra
+			cadenaInvertida = cadenaInvertida + cadena.charAt(contador);				//Invertimos la palabra
 			
 		}
 		
-		if (cadenaInvertida.equalsIgnoreCase(cadena)) {
+		if (cadenaInvertida.equalsIgnoreCase(cadena)) {									//Condición para ver si es palindromo o no
 			System.out.println("La cadena de texto ingresada es un palíndromo.");
+			
+			System.out.println("La cadena de texto invertida es: " + cadenaInvertida);	//Mostramos en pantalla la cadena de texto invertida
+
 
 		}else {
 			System.out.println("La cadena de texto ingresada no es un palíndromo.");
+			System.out.println("La cadena de texto invertida es: " + cadenaInvertida);
 
 		}
 
