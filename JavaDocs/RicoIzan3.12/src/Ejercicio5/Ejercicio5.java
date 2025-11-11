@@ -16,28 +16,29 @@ public class Ejercicio5 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
-		String cadena = "";
-		String [] cadenaInvertida;
+		String cadena = "", cadenaInvertida = "";
+		
 		
 		
 		
 		System.out.println("Ingresa una cadena de texto para averiguar si es palindromo o no: ");
 		cadena = teclado.nextLine();
 		cadena = cadena.toLowerCase();
-		cadenaInvertida = new String[cadena.length()];
+		cadena = cadena.replace(" ", "");
 		
-		for(int contador = 0; contador < cadenaInvertida.length; contador++) { 
-			cadenaInvertida[contador] = cadena.substring(contador);
-			System.out.print(cadenaInvertida);
-
+		
+		for(int contador = cadena.length() - 1; contador >= 0; contador--) { 
+			cadenaInvertida = cadenaInvertida + cadena.charAt(contador);
 			
-			//hay que hacer un vector para almacenar toda la cadena de texto
-			// y poner el contador en la ultima posicion, he ir reduciendo el valor del contador para darle la vuelta al array y sacar si es un palindromo
-			System.out.print(cadena.charAt(contador) + " ");
-
 		}
 		
-		
+		if (cadenaInvertida.equalsIgnoreCase(cadena)) {
+			System.out.println("La cadena de texto ingresada es un palíndromo.");
+
+		}else {
+			System.out.println("La cadena de texto ingresada no es un palíndromo.");
+
+		}
 
 
 	}
