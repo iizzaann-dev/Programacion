@@ -17,20 +17,20 @@ public class Ejercicio3 {
 		Scanner teclado = new Scanner(System.in);
 
 		
-		String cadena1, cadena2, cadena3, nombre, apellido1, apellido2;
+		String cadena1, cadena2, cadena3, nombre, apellido1, apellido2;					//Inicializamos las variables
 		
-		System.out.println("Por favor, ingresa tu nombre: ");
-		nombre = teclado.nextLine();
-		
-		System.out.println("Por favor, ingresa tu primer apellido: ");
-		apellido1 = teclado.nextLine();
-		
-		System.out.println("Por favor, ingresa tu segundo apellido: ");
-		apellido2 = teclado.nextLine();
-		
-		cadena1 = extraerLetras(nombre);
-		cadena2 = extraerLetras(apellido1);
-		cadena3 = extraerLetras(apellido2);
+		System.out.println("Por favor, ingresa tu nombre: ");							//  |-----> 
+		nombre = teclado.nextLine();													//  |
+																						//	|	
+		System.out.println("Por favor, ingresa tu primer apellido: ");					//  |		Pedimos al usuario las variables
+		apellido1 = teclado.nextLine();													//  |
+																						//	|
+		System.out.println("Por favor, ingresa tu segundo apellido: ");					//  |
+		apellido2 = teclado.nextLine();													//  |----->
+			
+		cadena1 = extraerLetras(nombre);												//  |-----> 
+		cadena2 = extraerLetras(apellido1);												//  |		Usamos los métodos para el ahorrarnos repetir código
+		cadena3 = extraerLetras(apellido2);												//  |----->
 		
 		System.out.println("Tu codigo de usuario es: " + cadena1 + cadena2 + cadena3);
 

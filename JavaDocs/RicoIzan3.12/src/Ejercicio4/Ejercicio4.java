@@ -17,15 +17,15 @@ public class Ejercicio4 {
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		int contadorA = 0, contadorE = 0, contadorI = 0, contadorO = 0, contadorU = 0;
+		int contadorA = 0, contadorE = 0, contadorI = 0, contadorO = 0, contadorU = 0;		//Inicializamos las variables
 		String cadena = "";
 		
 		System.out.println("Ingresa una cadena de texto: ");
-		cadena = teclado.nextLine();
+		cadena = teclado.nextLine();										//Pedimos la cadena de texto
 		
-		cadena = cadena.toLowerCase();
-		
-		for (int contador = 0; contador < cadena.length(); contador ++) {
+		cadena = cadena.toLowerCase();										//Ponemos en minuscula la cadena de texto
+			
+		for (int contador = 0; contador < cadena.length(); contador ++) {	//Bucle for y switch para ver cuantas vocales hay en una cadena de texto
 			switch (cadena.charAt(contador)) {
 			case 'a':
 				contadorA++;
@@ -50,7 +50,7 @@ public class Ejercicio4 {
 				default:
 			}
 		}
-		System.out.println("La cadena de texto " + cadena + " contiene: ");
+		System.out.println("La cadena de texto " + cadena + " contiene: ");		//Mostramos los contadores de las diferentes vocales
 		System.out.println("Contador de A: " + contadorA);
 		System.out.println("Contador de E: " + contadorE);
 		System.out.println("Contador de I: " + contadorI);

@@ -16,7 +16,7 @@ public class Ejercicio5 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
-		String cadena = "", cadenaInvertida = "";
+		String cadena = "", cadenaInvertida = "";										//Inicializamos las variables
 		
 		
 		
