@@ -14,14 +14,14 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
-		int [][] tablas;
-		int contador = 0, numeros = 1;
+		int [][] tablas;					//Declaramos la matriz
+		int contador = 0, numeros = 1;		//Declaramos las variables
 		
 		tablas = new int [10][10];
-		
-		for (int filas = 0; filas < tablas.length; filas++) {
 			
-			filas = contador;
+		for (int filas = 0; filas < tablas.length; filas++) {		//Realizamos dos bucles for para recorrer y rellenar el array
+			
+			filas = contador;	
 			contador++;
 			numeros = 0;
 			System.out.println("");
@@ -30,7 +30,7 @@ public class Ejercicio2 {
 
 			for (int columnas = 0; columnas < tablas[filas].length; columnas++) {
 				numeros++;
-				tablas[filas][columnas] = contador * numeros;			
+				tablas[filas][columnas] = contador * numeros;							//Realizamos las cuentas
 				System.out.print(contador + " * " +  numeros + " es: " + tablas[filas][columnas] + ", ");
 			}
 		}

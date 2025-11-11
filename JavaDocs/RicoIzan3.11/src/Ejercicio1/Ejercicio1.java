@@ -14,13 +14,13 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
-		int [][] numeros;
+		int [][] numeros;				//Declaramos las variables y matrices
 		int contador = 0;
 		
-		numeros = new int [5][5];
+		numeros = new int [5][5];		//Inicializamos la matriz
 		
 		
-		for (int filas = 0; filas < numeros.length; filas++) {
+		for (int filas = 0; filas < numeros.length; filas++) {							//Realizamos dos bucles for para recorrer y rellenar el array
 			for (int columnas = 0; columnas < numeros[filas].length; columnas++) {
 				contador++;
 				numeros [filas][columnas] = contador;

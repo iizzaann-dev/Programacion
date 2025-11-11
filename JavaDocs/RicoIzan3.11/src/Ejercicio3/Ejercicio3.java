@@ -16,8 +16,8 @@ public class Ejercicio3 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
-		int [][] matriz;
-		int filas = 0, columnas = 0, contenidoFilas = 0, contenidoColumnas = 0;
+		int [][] matriz;															//Declaramos la matriz
+		int filas = 0, columnas = 0, contenidoFilas = 0, contenidoColumnas = 0;		//Declaramos las variables
 		int contadorMayores = 0, contadorMenores = 0, contadorCeros = 0;
 		
 		System.out.println("Ingresa la cantidad de filas que quieres que tenga la matriz: ");
