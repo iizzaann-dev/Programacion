@@ -18,24 +18,78 @@ public class Ejercicio11 {
 		
 		int [] vector;
 		int [] vectorInvertido;
-		int suma = 0; 
-		int todo = 0;
+		
+		
 		
 		vector = new int [100];
 		vectorInvertido = new int [100];
 		
 		for (int contador = 0; contador < vector.length; contador++) {
-			vector[contador] = suma++ + 1;
+			vector[contador] = contador + 1;
 			
-			if (vector[contador] == 4) {
-				todo = vector[contador];
-			}
-			
+		}
+		
+		
+		for (int contador = 0; contador < vector.length; contador++) {
+			vectorInvertido[contador] = vector[vector.length - 1 - contador];
+		}
+		
+		for(int contador = 0; contador < vector.length; contador++) {
 			System.out.println(vector[contador]);
 		}
 		
-		System.out.println(todo);
+		System.out.println("");
 
+		
+		for (int contador = 0; contador < vector.length; contador++) {
+			System.out.println(vectorInvertido[contador]);
+
+		}
+		
+		//La formula es: vectorInvertido[i] = vector[vector.length - 1 - i];
+		/*
+		 * Tambien se puede hacer lo siguiente:
+		 * for (int i = vector.length - 1; i >= 0; i--) {
+    	   		System.out.println(vector[i]);
+			}
+		 */
+		
+		/*
+		 * En una matriz hay varios casos:
+		 * 		Las ultimas filas se vuelven las primeras: 
+		 * 	int filas = matriz.length;
+			int columnas = matriz[0].length;
+			int[][] invertida = new int[filas][columnas];
+
+			for (int i = 0; i < filas; i++) {						|		
+			    for (int j = 0; j < columnas; j++) {				|
+			        invertida[i][j] = matriz[filas - 1 - i][j];		|
+			     }
+			}	
+			        
+		 		Las ultimas columnas se vuelven las primeras:
+		 		for (int i = 0; i < filas; i++) {							|
+				    for (int j = 0; j < columnas; j++) {					|
+				        invertida[i][j] = matriz[i][columnas - 1 - j];		|
+				   	}
+				}
+				        
+				        
+				Las ultimas filas y columnas se vuelven las primeras:
+				for (int i = 0; i < filas; i++) {
+				    for (int j = 0; j < columnas; j++) {
+				        invertida[i][j] = matriz[filas - 1 - i][columnas - 1 - j];
+    					}	
+				}
+
+				Si lo que hay que hacer es transponerla hay que hacer si o si a no ser q sea cuadrada (4x4, 3x3, 5x5):
+				
+				matriz1 [n][m] = matriz2 [m][n]
+
+
+
+		 */
+		
 	}
 
 }
