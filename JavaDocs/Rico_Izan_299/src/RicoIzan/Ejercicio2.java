@@ -24,7 +24,7 @@ public class Ejercicio2 {
 			}
 			
 		}
-		
+		//Habia que usar el \t
 		
 		
 		}
