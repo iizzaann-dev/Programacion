@@ -10,6 +10,8 @@ package Ejercicio2;
 
 import java.util.Scanner;
 
+import biblioteca.matematicas;
+
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
@@ -21,22 +23,13 @@ public class Ejercicio2 {
 		System.out.println("Buenas, ingrese su edad: ");	
 		edad = teclado.nextInt();							//Pedimos el valor de la variable
 			
-		if (esMayorEdad(edad) == true) {					//Realizamos la condicion para imprimir un mensaje u otro
+		if (matematicas.esMayorEdad(edad) == true) {					//Realizamos la condicion para imprimir un mensaje u otro
 			System.out.println("Eres mayor de edad.");
 		}else {
 			System.out.println("No eres mayor de edad.");
 		}
 	}
 
-	public static boolean esMayorEdad(int a) {				//Realizamos un método en el que verificamos si es mayor o menor de edad
-		
-		boolean verdad = false;
-		if (a >= 18) {
-			verdad = true;
-		}else {
-			verdad = false;
-		}
-		return verdad;
-	}
+	
 	
 }

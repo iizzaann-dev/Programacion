@@ -1,0 +1,55 @@
+package biblioteca;
+
+public class matematicas {
+
+	public static double multiplica(double a, double b) {
+		return a * b;
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static boolean esMayorEdad(int a) {	//Realizamos un método en el que verificamos si es mayor o menor de edad
+			
+			boolean verdad = false;
+			if (a >= 18) {
+				verdad = true;
+			}else {
+				verdad = false;
+			}
+			return verdad;
+		}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static int minimo(int a, int b) {    //Usamos un metodo para calcular el minimo
+		int min = 0;
+		
+		if (a > b) {
+			min = b;
+			
+		}else {
+			min = a;
+		}
+		return min;
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static int maximo(int a, int b) {    //Usamos un metodo para calcular el maximo
+		int max = 0;
+		
+		if (a > b) {
+			max = a;
+			
+		}else {
+			max = b;
+		}
+		return max;
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+
+}
+
+
+	

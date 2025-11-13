@@ -8,6 +8,7 @@
 
 package Ejercicio3;
 
+import biblioteca.matematicas;
 import java.util.Scanner;
 
 public class Ejercicio3 {
@@ -24,21 +25,9 @@ public class Ejercicio3 {
 		System.out.println("Ingresa el valor del segundo número: ");
 		num2 = teclado.nextInt();
 		
-		System.out.println("El mínimo entre los dos números es: " + minimo(num1, num2));	//Usamos un metodo para calcular el minimo
+		System.out.println("El mínimo entre los dos números es: " + matematicas.minimo(num1, num2));	//Usamos un metodo para calcular el minimo
 			
 
 	}
 
-	
-	public static int minimo(int a, int b) {												//Usamos un metodo para calcular el minimo
-		int min = 0;
-		
-		if (a > b) {
-			min = b;
-			
-		}else {
-			min = a;
-		}
-		return min;
-	}
 }

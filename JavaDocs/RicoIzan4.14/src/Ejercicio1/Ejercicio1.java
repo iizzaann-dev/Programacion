@@ -10,6 +10,8 @@ package Ejercicio1;
 
 import java.util.Scanner;
 
+import biblioteca.matematicas;
+
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
@@ -23,11 +25,9 @@ public class Ejercicio1 {
 		System.out.println("Ingresa el valor del segundo número: ");
 		num2 = teclado.nextDouble();										//Pedimos el valor de la segunda variable
 		
-		System.out.printf("El valor de la multiplicación de %.0f y %.0f es: %.0f" ,num1, num2, multiplica(num1, num2));
+		System.out.printf("El valor de la multiplicación de %.0f y %.0f es: %.0f" ,num1, num2, matematicas.multiplica(num1, num2));
 			//Usamos printf para que sea mas sencillo la impresion de datos
+
 	}
 	
-	public static double multiplica(double a, double b) {
-		return a * b;
-	}
 }
