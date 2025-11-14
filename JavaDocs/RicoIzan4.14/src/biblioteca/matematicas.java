@@ -81,6 +81,47 @@ public class matematicas {
 		
 		return resultado;
 	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static double perimetro (double ancho, double alto) {
+		return 2 * (ancho + alto);
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static double area (double ancho, double alto) {
+		return ancho * alto;
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+
+	public static double intermedio1aN (int n) {
+		return (n / (double)(2));
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+
+	public static double suma1aN (int n) {
+		double sumatorio = 0;
+		
+		for (int contador = 0; contador <= n; contador++) {
+			sumatorio = sumatorio + contador;
+		}
+		return sumatorio;
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+
+	
+	public static double producto1aN (int n) {
+		double productorio = 1;
+		
+		for (int contador = 1; contador <= n; contador++) {
+			productorio = productorio * contador;
+		}
+		return productorio;
+	}
 }
 
 
