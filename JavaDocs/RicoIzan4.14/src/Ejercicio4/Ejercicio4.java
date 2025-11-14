@@ -8,6 +8,7 @@
 
 package Ejercicio4;
 
+import biblioteca.*;
 import java.util.Scanner;
 
 public class Ejercicio4 {
@@ -16,8 +17,19 @@ public class Ejercicio4 {
 		
 		Scanner teclado = new Scanner(System.in);
 		
+		int num1 = 0;
+		
 		System.out.println("Por favor, ingresa un número: ");
+		num1 = teclado.nextInt();
+		
+		if (matematicas.dimeSigno(num1) == 1) {
+			System.out.println("El número es positivo.");
+		}else if(matematicas.dimeSigno(num1) == 0) {
+			System.out.println("El número es igual a 0.");
+		}else {
+			System.out.println("El número es negativo.");
 
+		}
 
 	}
 

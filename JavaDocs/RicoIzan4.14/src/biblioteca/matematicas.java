@@ -48,7 +48,20 @@ public class matematicas {
 	}
 	
 /*-----------------------------------------------------------------------------------------------------*/
-
+	
+	public static int dimeSigno (int a) {
+		
+		int respuesta = 0; 
+		
+		if (a == 0) {
+			respuesta = 0;
+		}else if (a > 0){
+			respuesta = 1;
+		}else {
+			respuesta = -1;
+		}
+		return respuesta;
+	}
 }
 
 
