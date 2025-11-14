@@ -62,6 +62,12 @@ public class matematicas {
 		}
 		return respuesta;
 	}
+	
+	public static double millas_a_kilometros (int millas) {
+		double kilometros = 1.60934;
+		
+		return millas * kilometros; 
+	}
 }
 
 
