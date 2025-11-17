@@ -122,6 +122,28 @@ public class matematicas {
 		}
 		return productorio;
 	}
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static boolean comprobacionFecha (int dia, int mes, int anio) {
+		boolean veridico = false;
+		
+		if (anio < 0) {
+			veridico = false;
+			
+		}else if (mes < 0 || mes > 12) {
+			veridico = false;
+		}else if (dia == 30 && mes != 4 && mes != 6 && mes != 9 && mes != 11) {
+			veridico = false;
+		}else if (dia < 0 || dia > 31) {
+			veridico = false;
+		}else if (dia > 28 && mes != 2) {
+			veridico = false;
+		}else {
+			veridico = true;
+		}
+
+		return veridico;
+	}
 }
 
 
