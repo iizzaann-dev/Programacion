@@ -165,6 +165,14 @@ public class matematicas {
 		
 		return kilometros / millas; 
 	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static double averiguarDescuento (double sin_desc, double con_desc) {
+		
+		return 100 * ((sin_desc - con_desc)/sin_desc);
+	}
+
 }
 
 
