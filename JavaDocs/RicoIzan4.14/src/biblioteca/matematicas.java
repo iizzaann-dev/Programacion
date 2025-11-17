@@ -144,6 +144,19 @@ public class matematicas {
 
 		return veridico;
 	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static void tablaMultiplicar (int n) {
+		int multiplicacion;
+		multiplicacion = 0;
+		
+		for(int contador = 1; contador <= 10; contador++) {
+			multiplicacion = n * contador;
+			System.out.print(multiplicacion + " ");
+		}
+		
+	}
 }
 
 
