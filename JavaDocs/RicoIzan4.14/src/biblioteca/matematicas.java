@@ -151,11 +151,19 @@ public class matematicas {
 		int multiplicacion;
 		multiplicacion = 0;
 		
-		for(int contador = 1; contador <= 10; contador++) {
+		for(int contador = 0; contador <= 10; contador++) {
 			multiplicacion = n * contador;
 			System.out.print(multiplicacion + " ");
 		}
 		
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static double kilometros_a_millas (double kilometros) {
+		double millas = 1.60934;
+		
+		return kilometros / millas; 
 	}
 }
 
