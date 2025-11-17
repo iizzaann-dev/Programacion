@@ -25,8 +25,6 @@ public class Ejercicio11 {
 		n = teclado.nextInt();
 		
 		matematicas.tablaMultiplicar(n);
-
-
 	}
 
 }
