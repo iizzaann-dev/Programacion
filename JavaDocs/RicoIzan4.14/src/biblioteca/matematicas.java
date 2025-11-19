@@ -2,7 +2,7 @@ package biblioteca;
 
 public class matematicas {
 
-	public static double multiplica(double a, double b) {
+	public static double multiplica(double a, double b) {		//Multiplicacion de dos numeros
 		return a * b;
 	}
 	
@@ -49,7 +49,7 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static int dimeSigno (int a) {
+	public static int dimeSigno (int a) {				//Detectar el signo de un numero
 		
 		int respuesta = 0; 
 		
@@ -65,7 +65,7 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static double millas_a_kilometros (int millas) {
+	public static double millas_a_kilometros (int millas) {		//De millas a kilometros
 		double kilometros = 1.60934;
 		
 		return millas * kilometros; 
@@ -73,7 +73,7 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 
-	public static double precioConIva (double precio) {
+	public static double precioConIva (double precio) {				//Precio de un producto añadiendole el 21 por ciento de IVA
 		
 		//Suponemos que el IVA es de 21%
 		
@@ -84,25 +84,25 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static double perimetro (double ancho, double alto) {
+	public static double perimetro (double ancho, double alto) {	//Perimetro de un rectangulo
 		return 2 * (ancho + alto);
 	}
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static double area (double ancho, double alto) {
+	public static double area (double ancho, double alto) {		//Area de un rectangulo
 		return ancho * alto;
 	}
 	
 /*-----------------------------------------------------------------------------------------------------*/
 
-	public static double intermedio1aN (int n) {
+	public static double intermedio1aN (int n) {				//Intermedio entre dos numeros
 		return (n / (double)(2));
 	}
 	
 /*-----------------------------------------------------------------------------------------------------*/
 
-	public static double suma1aN (int n) {
+	public static double suma1aN (int n) {						//Sumatorio de un numero
 		double sumatorio = 0;
 		
 		for (int contador = 0; contador <= n; contador++) {
@@ -114,7 +114,7 @@ public class matematicas {
 /*-----------------------------------------------------------------------------------------------------*/
 
 	
-	public static double producto1aN (int n) {
+	public static double producto1aN (int n) {					//Productorio de un numero
 		double productorio = 1;
 		
 		for (int contador = 1; contador <= n; contador++) {
@@ -124,9 +124,9 @@ public class matematicas {
 	}
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static boolean comprobacionFecha (int dia, int mes, int anio) {
-		boolean veridico = false;
-		
+	public static boolean comprobacionFecha (int dia, int mes, int anio) {			//Mirar si la fecha introducida es correcta
+		boolean veridico = false;	
+			
 		if (anio < 0) {
 			veridico = false;
 			
@@ -147,7 +147,7 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static void tablaMultiplicar (int n) {
+	public static void tablaMultiplicar (int n) {				//Tabla de multiplicar del numero introducido
 		int multiplicacion;
 		multiplicacion = 0;
 		
@@ -160,7 +160,7 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static double kilometros_a_millas (double kilometros) {
+	public static double kilometros_a_millas (double kilometros) {				//Pasar de kilometros a millas
 		double millas = 1.60934;
 		
 		return kilometros / millas; 
@@ -168,11 +168,23 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static double averiguarDescuento (double sin_desc, double con_desc) {
+	public static double averiguarDescuento (double sin_desc, double con_desc) {				//Averigua el descuento en porcentaje
 		
 		return 100 * ((sin_desc - con_desc)/sin_desc);
 	}
 
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static void trianguloLetras (char letra,int tamanio) {
+		
+		for(int i = 1; i <= tamanio; i++) {
+			for(int j = 1; j <= i; i++) {
+				System.out.print(letra);
+			}
+			System.out.println("");
+		}
+	}
 }
 
 
