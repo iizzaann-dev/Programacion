@@ -25,7 +25,7 @@ public class Ejercicio13 {
 		System.out.println("Ingresa el valor del producto con descuento: ");
 		con_descuento = teclado.nextDouble();
 		
-		System.out.printf("El descuento es de: %.0f%%", matematicas.averiguarDescuento(sin_descuento, con_descuento));
+		System.out.printf("El descuento es de un %.0f%%", matematicas.averiguarDescuento(sin_descuento, con_descuento));
 
 
 	}
