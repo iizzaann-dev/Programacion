@@ -14,7 +14,7 @@ public class Ejercicio14 {
 
 	public static void main(String[] args) {
 		
-		matematicas.trianguloLetras('a', 5);
+		lenguaje.trianguloLetras('a', 5);
 
 
 	}
