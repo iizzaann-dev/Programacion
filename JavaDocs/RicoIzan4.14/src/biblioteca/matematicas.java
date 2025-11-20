@@ -176,13 +176,44 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static void trianguloLetras (char letra,int tamanio) {
+	public static void trianguloLetras (char letra,int tamanio) {								//Hace un triangulo con letras
 		
 		for(int contador = 1; contador <= tamanio; contador++) {
 			for(int contador2 = 1; contador2 <= contador; contador2++) {
 				System.out.print(letra);
 			}
 			System.out.println("");
+		}
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static int sumaValoresArray (int vector[]) {											//Suma todos los valores de un array
+			
+		int suma = 0;
+		
+		for (int contador = 0; contador < vector.length; contador++) {
+			suma = suma + vector[contador];
+			
+		}
+		return suma;
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static double mediaValoresArray (int vector [], int acumulador) {					//Hace una media de todos los valores de un array
+		
+		return (double)sumaValoresArray(vector) / acumulador; 
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static void vectorConAleatorios (int vector[]) {
+		
+		for (int contador = 0; contador < vector.length; contador++) {
+			vector[contador] = (int)(Math.random() * 50);
+			System.out.println(vector[contador]);
+
 		}
 	}
 }
