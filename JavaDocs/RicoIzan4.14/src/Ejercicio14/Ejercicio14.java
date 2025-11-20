@@ -13,13 +13,8 @@ import java.util.Scanner;
 public class Ejercicio14 {
 
 	public static void main(String[] args) {
-		Scanner teclado = new Scanner(System.in);
 		
-		
-		
-		
-		matematicas.trianguloLetras(
-				'a', 5);
+		matematicas.trianguloLetras('a', 5);
 
 
 	}

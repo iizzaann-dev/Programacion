@@ -178,8 +178,8 @@ public class matematicas {
 	
 	public static void trianguloLetras (char letra,int tamanio) {
 		
-		for(int i = 1; i <= tamanio; i++) {
-			for(int j = 1; j <= i; i++) {
+		for(int contador = 1; contador <= tamanio; contador++) {
+			for(int contador2 = 1; contador2 <= contador; contador2++) {
 				System.out.print(letra);
 			}
 			System.out.println("");
