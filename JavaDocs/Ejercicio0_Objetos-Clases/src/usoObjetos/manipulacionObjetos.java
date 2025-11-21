@@ -2,7 +2,7 @@ package usoObjetos;
 
 import java.awt.Rectangle;
 
-public class maniplacionObjetos {
+public class manipulacionObjetos {
 
 	public static void main(String[] args) {
 		
