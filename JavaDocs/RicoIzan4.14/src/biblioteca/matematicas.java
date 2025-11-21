@@ -200,10 +200,35 @@ public class matematicas {
 	public static void vectorConAleatorios (int vector[]) {
 		
 		for (int contador = 0; contador < vector.length; contador++) {
-			vector[contador] = (int)(Math.random() * 50);
+			vector[contador] = (int)Math.random();
 			System.out.println(vector[contador]);
 
 		}
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+
+	public static void verificadorPrimo (int num) {
+		
+		boolean comprobacion = false;
+		
+		
+		do {
+			// for (int contador = 2; contador <= num; contador++) { 
+				
+			while (num % )
+				if (num % contador == 1) {
+					comprobacion = true;
+					System.out.println("El numero " + num + " es primo.");
+
+				}else {
+					comprobacion = false;
+					System.out.println("El numero " + num + " no es primo.");
+				}
+			//}
+		}while (comprobacion == false);
+		
+		
 	}
 }
 
