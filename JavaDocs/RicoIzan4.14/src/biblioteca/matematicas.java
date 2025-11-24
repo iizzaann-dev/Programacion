@@ -208,27 +208,22 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 
-	public static void verificadorPrimo (int num) {
+	public static void verificadorPrimo (int num) {						//Se verifica si es primo
 		
-		boolean comprobacion = false;
+		int acumulador = 0;
 		
+		for (int contador = 1; contador <= num; contador++) {
+			if (num % contador == 0) {
+				acumulador++;
+			}
+		}
 		
-		do {
-			// for (int contador = 2; contador <= num; contador++) { 
-				
-			while (num % )
-				if (num % contador == 1) {
-					comprobacion = true;
-					System.out.println("El numero " + num + " es primo.");
+		if (acumulador == 2) {
+			System.out.println("El número introducido es primo.");
 
-				}else {
-					comprobacion = false;
-					System.out.println("El numero " + num + " no es primo.");
-				}
-			//}
-		}while (comprobacion == false);
-		
-		
+		}else {
+			System.out.println("El número introducido no es primo.");
+		}
 	}
 }
 
