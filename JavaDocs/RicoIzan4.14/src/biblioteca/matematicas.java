@@ -197,7 +197,7 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 	
-	public static void vectorConAleatorios (int vector[]) {
+	public static void vectorConAleatorios (int vector[]) {										//Rellenamos un vector con numeros aleatorios
 		
 		for (int contador = 0; contador < vector.length; contador++) {
 			vector[contador] = (int)Math.random();
@@ -248,6 +248,38 @@ public class matematicas {
 	
 /*-----------------------------------------------------------------------------------------------------*/
 
+	public static void comprobacionPitagoras (int x, int y, int z) {						//Comprobamos si los numeros introducidos cumplen el teorema de pitagoras
+		
+		int pitagoras = 0, xCuadrado =  Math.powExact(x, 2), yCuadrado = Math.powExact(y, 2), zCuadrado = Math.powExact(z, 2);
+		
+		if (xCuadrado + yCuadrado == zCuadrado) {
+			System.out.println("Los números introducidos cumplen el teorema de Pitágoras.");
+		}else {
+			System.out.println("Los números introducidos no cumplen el teorema de Pitágoras.");
+
+		}
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static double calcularCircunferencia (double radio) {
+																		//Calculamos la circunferencia de mediante el radio
+		return (2 * Math.PI * radio); 
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+
+	public static double calcularAreaRadio (double radio) {
+		
+		return (Math.PI * Math.pow(radio, 2)); 
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+
+	public static double calcularVolumenRadio (double radio) {
+		
+		return ((4/3) * Math.PI * Math.pow(radio, 3)); 
+	}
 }
 
 
