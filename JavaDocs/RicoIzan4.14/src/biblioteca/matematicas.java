@@ -225,6 +225,29 @@ public class matematicas {
 			System.out.println("El número introducido no es primo.");
 		}
 	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+	
+	public static char calculoNIF(int dni) {								//Calcula la letra del DNI (NIF) mediante los digitos de este
+		
+		char NIF = ' ';
+		int NIFdigitos = 0; 
+		
+		char [] letrasDNI = {
+			    'T','R','W','A','G','M','Y','F','P','D','X','B','N',
+			    'J','Z','S','Q','V','H','L','C','K','E'
+			};
+			
+		
+		NIFdigitos = dni % 23;
+		
+		NIF = letrasDNI[NIFdigitos];
+		
+		return NIF;
+	}
+	
+/*-----------------------------------------------------------------------------------------------------*/
+
 }
 
 
