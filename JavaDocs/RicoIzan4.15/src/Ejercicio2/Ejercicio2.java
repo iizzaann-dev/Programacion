@@ -18,29 +18,28 @@ public class Ejercicio2 {
 		
 		String producto = "";
 		int cantidad = 0, descuento = 15; 
-		double precio = 20, precioPagarSin = 0; 
+		double precio = 20;
 		
 		
 		System.out.println("Buenas, ingresa el producto que quiere comprar: ");
 		producto = teclado.nextLine();
-		teclado.nextLine();
 		
-		System.out.println("Buenas, ingresa la cantidad de " + producto + " que quiere comprar.");
+		
+		System.out.println("Ahora ingresa la cantidad de " + producto + " que quiere comprar.");
 		cantidad = teclado.nextInt();
 		
-		System.out.println("Usted ha adquirido " + cantidad + " de " + producto + ", a un precio de " + precio + " euros la unidad.");
+		System.out.println("Usted ha adquirido " + cantidad + " " + producto + ", a un precio de " + precio + " euros la unidad.");
 		
-		precioPagarSin = productosDescuento(precio, cantidad, descuento);
-		System.out.println("El precio a pagar es ");
+		
+		System.out.println("El precio a pagar es " + (precio * cantidad) + ", pero al aplicarle el descuento del " + 15 + "% el \n"
+				+ "precio final a pagar es: " + productosDescuento (precio, cantidad, descuento));
 	}
 
 	
 	public static double productosDescuento (double precio, int cantidad, int descuento) {
 		
-		double precioPagar = 0; 
-		double descuentoDecimal = descuento / 100; 
-		precioPagar = (precio * cantidad) * descuento;
-		
-		return precioPagar; 
+		double descuentoDecimal = (double)descuento / 100; 
+		 
+		return (precio * cantidad) * (1 - descuentoDecimal);
 	}
 }
