@@ -13,7 +13,18 @@ public class Ejercicio2 {
 		for (int contador = 1; contador <= 4; contador++) {
 			System.out.printf("El número de caras totales de %d es: %d. \n", contador, Dado.getNumeroVecesCaraGlobal(contador));
 		}
-		
+		Dado dado1; 
+		for(int contador = 0; contador <= 10; contador++) {
+			try {
+				dado1 = new Dado ((int)(Math.random() * 9));
+			} catch (IllegalArgumentException ex01) {
+				System.out.printf("Error: %s. \n", ex01.getMessage());
+				dado1 = new Dado();
+				System.out.printf("Se ha creado un dado vacio. \n"
+						+ "");
+			}
+			
+		}
 
 	}
 
