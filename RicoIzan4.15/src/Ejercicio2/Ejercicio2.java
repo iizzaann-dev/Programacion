@@ -41,6 +41,6 @@ public class Ejercicio2 {
 		double descuentoDecimal = descuento / 100; 
 		precioPagar = (precio * cantidad) * descuento;
 		
-		return precioPagar; 
+		return precioPagar;
 	}
 }
