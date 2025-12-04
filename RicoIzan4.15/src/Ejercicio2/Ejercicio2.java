@@ -2,7 +2,7 @@
 *Descripción: Crea un método llamado productosDescuento que devolverá un valor double. Recibirá como
 *parámetros tres valores (double precio, int cantidad, int descuento).
 *El método calculará el precio a pagar, multiplicando la cantidad de productos por el precio, y
-*aplicando el descuento (en porcentaje) correspondiente
+*aplicando el descuento (en porcentaje) correspondiente.
 *Nombre: Izan Rico Blanco
 *Fecha: 26/11/2025
 */
