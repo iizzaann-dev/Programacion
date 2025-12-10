@@ -35,6 +35,7 @@ public class Ejercicio2 {
 				System.out.printf("Error: %s. \n", ex01.getMessage());
 				dado1 = new Dado();
 				System.out.printf("Se ha creado un dado vacio. \n\n");
+				
 			}
 			
 		}
