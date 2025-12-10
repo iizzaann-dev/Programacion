@@ -8,7 +8,7 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		
-		String [] almacen = new String ;
+		String [] almacen = new String;
 		
 		System.out.printf("El número de dados que hay es: %s. \n", Dado.getNumeroDadosCreados());
 		System.out.printf("La cantidad de tiradas totales es: %s.\n", Dado.getNumeroLanzamientosGlobal());
