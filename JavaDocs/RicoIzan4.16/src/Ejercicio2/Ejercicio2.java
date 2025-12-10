@@ -8,7 +8,7 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		
-		String [] almacen = new String;
+		String [] almacen = new String[10];
 		
 		System.out.printf("El número de dados que hay es: %s. \n", Dado.getNumeroDadosCreados());
 		System.out.printf("La cantidad de tiradas totales es: %s.\n", Dado.getNumeroLanzamientosGlobal());
@@ -28,7 +28,7 @@ public class Ejercicio2 {
 				dado1 = new Dado ((int)(Math.random() * 9));
 				System.out.printf("Correcto, se ha creado un dado de %d caras. \n\n", contador );
 				for(int contador1 = 0; contador1 <= contador; contador1++) {
-					almacen = dado1.lanzar();
+					
 					
 				}
 			} catch (IllegalArgumentException ex01) {
