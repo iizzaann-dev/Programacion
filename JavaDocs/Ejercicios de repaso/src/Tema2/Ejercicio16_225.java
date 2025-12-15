@@ -26,7 +26,6 @@ public class Ejercicio16_225 {
 			suma = suma + (numero % 10); 
 			numero = numero / 10;
 			resultado = suma + numero;
-			
 		}while (numero != 0);
 		
 		System.out.printf("El resultado de la suma de todas las cifras de %d es: %s.", numeroInicial, resultado);
