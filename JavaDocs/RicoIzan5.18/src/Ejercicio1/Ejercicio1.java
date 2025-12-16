@@ -6,10 +6,9 @@
 
 package Ejercicio1;
 
+import java.time.format.DateTimeFormatter;
 import libtarea3.Bombilla;
 import libtarea3.Utilidades;
-import java.lang.IllegalArgumentException;
-import java.lang.IllegalStateException;
 
 public class Ejercicio1 {
 
@@ -81,7 +80,7 @@ public class Ejercicio1 {
 		
 		//4.2
 		
-		for (int contador = 0; contador <= 6; contador++) {
+		for (int contador = 0; contador <= 5; contador++) {
 			luz1.conmutar();
 			System.out.printf("%dª conmutación. \n", (contador + 1));
 			System.out.println("Espera de 1s.");
@@ -109,7 +108,42 @@ public class Ejercicio1 {
 		
 		//5.1
 		
+		System.out.printf("La potencia de la primera bombilla es: %.2fW \n", luz1.getPotencia());
 		
+		//5.2
+		if (luz1.getEstado() == true) {
+			System.out.println("La bombilla esta encendida.");
+		}
+		
+		//5.3
+		DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		System.out.printf("La ultima vez que se encendio la bombilla fue %s \n", luz1.getUltimaVezEncendida().format(formato));
+		
+		/*
+		 *  Solo fecha:
+
+			DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+			→ 16-12-2025
+			
+			Solo hora:
+			
+			DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm");
+			→ 20:07
+			
+			Formato textual:
+			
+			DateTimeFormatter formatoTexto = DateTimeFormatter.ofPattern("EEEE, dd MMMM yyyy HH:mm");
+			→ martes, 16 diciembre 2025 20:07
+		*/
+	
+		
+		//5.4
+		
+		System.out.printf("La cantidad de veces que se ha encendido la luz 1 es: %d \n", luz1.getVecesEncendida());
+		
+		//5.5
+		
+		System.out.printf("La bombilla lleva encendida %.2fs.", luz1.getTiempoEncendida());
 	}
 
 }
