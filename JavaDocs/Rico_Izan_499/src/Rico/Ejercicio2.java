@@ -40,6 +40,7 @@ public class Ejercicio2 {
 				Rico_1 = new CuentaBancaria();
 			}
         }
+        
 		
         correcto = false;
         
