@@ -41,7 +41,6 @@ public class Ejercicio2 {
 			}
         }
         
-		
         correcto = false;
         
         while (!correcto) {
