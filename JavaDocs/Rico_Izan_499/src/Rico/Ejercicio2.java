@@ -3,6 +3,8 @@ package Rico;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import libtarea3.CuentaBancaria;
+import java.lang.IllegalArgumentException;
+import java.lang.IllegalStateException;
 
 public class Ejercicio2 {
 
@@ -93,10 +95,36 @@ public class Ejercicio2 {
 		minimoTotal = minimo(minimoMedio, minimo3);
 		
 		
-		System.out.printf("El limite descubierto minimo es: %.0f€ \n", minimoTotal);
+		System.out.printf("El limite descubierto minimo es: %.0f€ \n\n", minimoTotal);
 
 		
+		for (int contador = 0; contador < 5; contador++) {
+			try {
+				Rico_1.transferir(300, Rico_2);
+				System.out.println("Se ha hecho una transferencia de 300€ a la cuenta Rico_2.");
+				
+			} catch (IllegalArgumentException error1) {
+				System.out.println("La cuenta de destino no es valida o la cantidad a transferir no es valida");
+	
+			} catch (IllegalStateException error2) {
+				System.out.println("La cuenta de origen supera el límite de descubierto de la cuenta o  se supera el saldo máximo en la cuenta de destino.");
+	
+			}
+		}
 		
+		
+		
+		System.out.printf("El saldo de la cuenta Rico_1 es: %.0f€. \n", Rico_1.getSaldo());
+		System.out.printf("El saldo de la cuenta Rico_2 es: %.0f€. \n\n", Rico_2.getSaldo());
+		
+		Rico_3.embargar(50);
+		System.out.printf("El porcentaje de embargo de la cuenta Rico_3 es: %.0f%%.\n\n", Rico_3.getPorcentajeEmbargo());
+		
+		System.out.printf("El saldo de la cuenta Rico_1 es: %.0f€\n", Rico_1.getSaldo());
+		System.out.printf("El saldo de la cuenta Rico_2 es: %.0f€\n", Rico_2.getSaldo());
+		System.out.printf("El saldo de la cuenta Rico_3 es: %.0f€\n", Rico_3.getSaldo());
+		System.out.printf("El número de cuentas embargadas es: %d.", CuentaBancaria.getNumCuentasEmbargadas());
+
 	}
 	
 	
