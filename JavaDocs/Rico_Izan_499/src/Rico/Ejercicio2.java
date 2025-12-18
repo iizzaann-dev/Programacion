@@ -11,7 +11,7 @@ public class Ejercicio2 {
 		LocalDate fechaCreacion = LocalDate.now();
 		int limite = 0;
 		boolean correcto = false;
-
+		double minimo1, minimo2, minimo3, minimoTotal;
 
 		
 		//2 Declaramos las variables referencia a objetos instancia de la clase CuentaBancaria
@@ -29,13 +29,13 @@ public class Ejercicio2 {
          
 	        } catch (DateTimeException excepcionFecha) {
 				System.out.printf("Rico_1: No se puede crear una cuenta de banco en la fecha %S \n ", fechaCreacion);
-				System.out.println(excepcionFecha.getMessage());
+				//System.out.println(excepcionFecha.getMessage());
 				Rico_1 = new CuentaBancaria();
 			} catch (IllegalArgumentException excepcionArgumentoIlegal) {
 				System.out.printf("Rico_1: No se puede crear una cuenta de banco con el limite descubierto establecido \n");
 				System.out.println("Se ha creado una cuenta vacia.");
 
-				System.out.println(excepcionArgumentoIlegal.getMessage());
+				//System.out.println(excepcionArgumentoIlegal.getMessage());
 				Rico_1 = new CuentaBancaria();
 			}
         }
@@ -50,12 +50,12 @@ public class Ejercicio2 {
          
 	        } catch (DateTimeException excepcionFecha) {
 				System.out.printf("Rico_2: No se puede crear una cuenta de banco en la fecha %S \n ", fechaCreacion);
-				System.out.println(excepcionFecha.getMessage());
+				//System.out.println(excepcionFecha.getMessage());
 				Rico_2 = new CuentaBancaria();
 				
 			} catch (IllegalArgumentException excepcionArgumentoIlegal) {
 				System.out.printf("Rico_2: No se puede crear una cuenta de banco con el limite descubierto establecido \n");
-				System.out.println(excepcionArgumentoIlegal.getMessage());
+				//System.out.println(excepcionArgumentoIlegal.getMessage());
 				System.out.println("Se ha creado una cuenta vacia.");
 				Rico_2 = new CuentaBancaria();
 			}
@@ -70,12 +70,12 @@ public class Ejercicio2 {
          
 	        } catch (DateTimeException excepcionFecha) {
 				System.out.printf("Rico_3: No se puede crear una cuenta de banco en la fecha %S \n ", fechaCreacion);
-				System.out.println(excepcionFecha.getMessage());
+				//System.out.println(excepcionFecha.getMessage());
 				Rico_3 = new CuentaBancaria();
 				
 			} catch (IllegalArgumentException excepcionArgumentoIlegal) {
 				System.out.printf("Rico_3: No se puede crear una cuenta de banco con el limite descubierto establecido \n");
-				System.out.println(excepcionArgumentoIlegal.getMessage());
+				//System.out.println(excepcionArgumentoIlegal.getMessage());
 				System.out.println("Se ha creado una cuenta vacia.");
 				Rico_3 = new CuentaBancaria();
 			}
@@ -99,6 +99,11 @@ public class Ejercicio2 {
 
 		}
 
+		minimo()
+		
+		System.out.printf("El minimo es: \n", minimiTotal);
+
+		
 		
 	}
 	
@@ -113,4 +118,16 @@ public class Ejercicio2 {
 		return limite;
 	}
 
+	
+	public static int minimo(int a, int b) {    //Usamos un metodo para calcular el minimo
+		int min = 0;
+		
+		if (a > b) {
+			min = b;
+			
+		}else {
+			min = a;
+		}
+		return min;
+	}
 }
