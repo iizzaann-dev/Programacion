@@ -2,7 +2,6 @@ package Rico;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.lang.NullPointerException;
 import libtarea3.CuentaBancaria;
 
 public class Ejercicio2 {
@@ -11,7 +10,7 @@ public class Ejercicio2 {
 		LocalDate fechaCreacion = LocalDate.now();
 		int limite = 0;
 		boolean correcto = false;
-		double minimo1, minimo2, minimo3, minimoTotal;
+		double minimo1, minimo2, minimo3, minimoMedio, minimoTotal;
 
 		
 		//2 Declaramos las variables referencia a objetos instancia de la clase CuentaBancaria
@@ -82,26 +81,19 @@ public class Ejercicio2 {
         }
         
 		System.out.printf("La información de la cuenta Rico_1: Saldo: %.0f€, Limite Descubierto: %.0f€ \n", Rico_1.getSaldo(), Rico_1.getLimiteDescubierto());
-		try {
-			System.out.printf("La información de la cuenta Rico_2: Saldo: %.0f€, Limite Descubierto: %.0f€ \n", Rico_2.getSaldo(), Rico_2.getLimiteDescubierto());
+		System.out.printf("La información de la cuenta Rico_2: Saldo: %.0f€, Limite Descubierto: %.0f€ \n", Rico_2.getSaldo(), Rico_2.getLimiteDescubierto());
+		System.out.printf("La información de la cuenta Rico_3: Saldo: %.0f€, Limite Descubierto: %.0f€ \n\n", Rico_3.getSaldo(), Rico_3.getLimiteDescubierto());
 
-		} catch ( NullPointerException error1) {
-			System.out.println("No se puede obtener la informacion de la cuenta Rico_2");
-			System.out.printf("Error: %s \n", error1.getMessage());
-		}
 		
-		try {
-			System.out.printf("La información de la cuenta Rico_3: Saldo: %.0f€, Limite Descubierto: %.0f€ \n", Rico_3.getSaldo(), Rico_3.getLimiteDescubierto());
-
-		} catch (NullPointerException error2) {
-			System.out.println("No se puede obtener la informacion de la cuenta Rico_3");
-			System.out.printf("Error: %s \n", error2.getMessage());
-
-		}
-
-		minimo()
+		minimo1 = Rico_1.getLimiteDescubierto();
+		minimo2 = Rico_2.getLimiteDescubierto();
+		minimo3 = Rico_3.getLimiteDescubierto();
 		
-		System.out.printf("El minimo es: \n", minimiTotal);
+		minimoMedio = minimo(minimo1,minimo2);
+		minimoTotal = minimo(minimoMedio, minimo3);
+		
+		
+		System.out.printf("El limite descubierto minimo es: %.0f€ \n", minimoTotal);
 
 		
 		
@@ -119,8 +111,8 @@ public class Ejercicio2 {
 	}
 
 	
-	public static int minimo(int a, int b) {    //Usamos un metodo para calcular el minimo
-		int min = 0;
+	public static double minimo(double a, double b) {    //Usamos un metodo para calcular el minimo
+		double min = 0;
 		
 		if (a > b) {
 			min = b;
