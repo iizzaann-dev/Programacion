@@ -18,17 +18,16 @@ public class Ejercicio1 {
 		System.out.printf("El consumo total de toda la semana es: %d", consumoTotal(tabla));
 	}
 	
-	public static String apartado1(int [][] tabla) {
-		int resultado = 0;
-		String dia = "";
+	public static String consumoMinimoHoras(int [][] tabla) {
+		int resultado = 0, acumulador = 0;
 		int dias = 7, horas = 23; 
-		tabla = new int [dias][horas];
+		String dia = "";
 		
 		for (int contador = 0; contador < tabla.length; contador++) {
-			for (int contador1 = 0; contador1 < tabla[dias].length; contador1++) {
-				//if (tabla[contador] < tabla[1]) {
+			for (int contador1 = 0; contador1 < tabla[contador].length; contador1++) {
+				if (tabla[contador][contador1] < tabla[acumulador]) {
 					
-				//}
+				}
 			}
 		}
 		
@@ -51,14 +50,16 @@ public class Ejercicio1 {
 		return dia;
 	}
 	
+	//Apartado C: Consumo Total
+	
 	public static int consumoTotal (int [][] tabla) {
 		
 		int suma = 0; 
-		int dias = 7, horas = 23; 
+		int dias = 7, horas = 24; 
 		
 		
 		for (int contador = 0; contador < tabla.length; contador++) {
-			for (int contador1 = 0; contador1 < tabla[0].length; contador1++) {
+			for (int contador1 = 0; contador1 < tabla[contador].length; contador1++) {
 				suma = suma + tabla[contador][contador1];
 			}
 		}
