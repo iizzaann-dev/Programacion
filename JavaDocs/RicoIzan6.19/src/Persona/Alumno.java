@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class Alumno {
 		
 	public static final short MaxAlumnosClase = 0;
-	public enum NivelIngles { C1, C2 };
+	public enum NivelIngles { A1, A2, B1, B2, C1, C2 };
 
 	
 	private String DNI;
