@@ -37,10 +37,9 @@ public class Alumno  {
 			throw new IllegalArgumentException ("No se ha ingrasdo un tipo de dato correcto.");
 		}else if (nombre.isEmpty()) {
 			throw new IllegalArgumentException ("No se ha ingresado un nombre para el alumno.");
-
 		}
-
-
+		
+		
 		
 	}
 	
@@ -57,7 +56,7 @@ public class Alumno  {
 		return resultado;
 	}
 	
-	
+	public static boolean fechaNacimientoReal
 }
 
 	
