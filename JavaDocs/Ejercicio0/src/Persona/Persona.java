@@ -57,7 +57,12 @@ public class Persona {
     		throw new IllegalArgumentException("No se ha ingresado ningún carácter.");
     	}
     	
-    	
+    	//Lanzamos excepciones en el caso de que la fecha introducia sea anterior a 01/01/2000 o que no este permitida
+    	if (validarFechaNacimiento(fechaNacimiento) == false) {
+    		throw new IllegalArgumentException("La fecha ingresada es anterior a la permitida.");
+    	}else if (fechaNacimiento == null) {
+    		throw new IllegalArgumentException("La fecha ingresada no esta permitida.");
+    	}
     	
     	
     }
@@ -87,11 +92,15 @@ public class Persona {
     public static boolean validarFechaNacimiento (LocalDate anio) {
     	boolean resultado = false; 
     	
-    	if (anio.isBefore(LocalDate.of(1999, 1, 1))) {
-    		resultado = false; 
+    	if (anio.isBefore(LocalDate.of(2000, 1, 1))) {
+    		resultado = false;
+    	}else {
+    		resultado = true;
     	}
     	
     	return resultado; 
     }
+    
+    
     
 }
