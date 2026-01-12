@@ -28,7 +28,7 @@ public class Main {
         
         // -------- Caso 2: DNI inválido --------
         try {
-            Persona p2 = new Persona(
+            Persona p2 = new Persona( 			//Tiene que haber la misma cantidad (si en el constructor hay 3 String hay que poner solo 3 Strings)
                 "1234Z",                   // DNI inválido
                 "Ana",
                 "López",

@@ -12,28 +12,33 @@ public class Persona {
     public static final LocalTime horaMaxCentro = LocalTime.of(21, 30);
     
 	// Atributos
-    private static LocalTime horaMaxAlumnoCentro;
     private static short numAlumnos;
     
-    private String DNI;
+    private LocalTime horaMaxAlumnoCentro;
+    private String dni;
     private String nombre;
     private String apellido1;
     private String apellido2;
     private LocalDate fechaNacimiento;
-    private byte peso;
-    private byte altura;
+    private float peso;
+    private float altura;
     private boolean mayorEdad;
     private byte numHermanos;
     
-    public Persona (String dni, String nombre, String apellidos, LocalDate fechaNacimiento, byte peso, byte altura, boolean mayorEdad, byte numHermanos, 
+    
+    //Throws IllegalArgumentException
+    public Persona (String dni, String nombre, String apellido1, String apellido2, LocalDate fechaNacimiento, byte peso, byte altura, boolean mayorEdad, byte numHermanos, 
     		short numAlumnos, LocalTime horaMaxAlumnoCentro) throws IllegalArgumentException {
     	
+    	
+    	
     	//Lanzamos excepciones en caso de que el DNI este vacio o no se hayan ingresado ningun valor valido
-    	if (DNIvalido(DNI) == false ) {
+    	if (DNIvalido(dni) == false ) {
     		throw new IllegalArgumentException ("No se han ingresado valores validos para un DNI.");
-    	}else if (DNI.isEmpty()) {
+    	}else if (dni.isEmpty()) {
     		throw new IllegalArgumentException ("No se ha ingresado ningún DNI.");
     	}
+    	this.dni = dni;
     	
     	//Lanzamos excepciones en caso de que el nombre ese vacio o no se hayan ingresado ningun valor valido
     	if (validarString(nombre) == false) {
@@ -41,6 +46,7 @@ public class Persona {
     	}else if (nombre.isEmpty()) {
     		throw new IllegalArgumentException("No se ha ingresado ningún carácter.");
     	}
+    	this.nombre = nombre;
     	
     	//Lanzamos excepciones en caso de que el apellido1 ese vacio o no se hayan ingresado ningun valor valido
     	if (validarString(apellido1) == false) {
@@ -48,6 +54,7 @@ public class Persona {
     	}else if (apellido1.isEmpty()) {
     		throw new IllegalArgumentException("No se ha ingresado ningún carácter.");
     	}
+    	this.apellido1 = apellido1; 
     	
     	//Lanzamos excepciones en caso de que el apellido2 ese vacio o no se hayan ingresado ningun valor valido
 
@@ -56,6 +63,7 @@ public class Persona {
     	}else if (apellido2.isEmpty()) {
     		throw new IllegalArgumentException("No se ha ingresado ningún carácter.");
     	}
+    	this.apellido2 = apellido2;
     	
     	//Lanzamos excepciones en el caso de que la fecha introducia sea anterior a 01/01/2000 o que no este permitida
     	if (validarFechaNacimiento(fechaNacimiento) == false) {
@@ -63,10 +71,19 @@ public class Persona {
     	}else if (fechaNacimiento == null) {
     		throw new IllegalArgumentException("La fecha ingresada no esta permitida.");
     	}
+    	this.fechaNacimiento = fechaNacimiento;
     	
-    	
+    	this.peso = peso; 
+    	this.altura = altura;
+    	this.mayorEdad = mayorEdad;
+    	this.numHermanos = numHermanos; 
+    	this.horaMaxAlumnoCentro = horaMaxAlumnoCentro;
     }
 
+    public Persona () {
+    	this();
+    }
+    
     public static boolean DNIvalido (String DNI) {
     	boolean resultado = false;
     	
