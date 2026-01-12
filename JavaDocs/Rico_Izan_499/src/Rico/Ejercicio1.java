@@ -15,56 +15,102 @@ public class Ejercicio1 {
 			};
 
 		
-		System.out.printf("El consumo total de toda la semana es: %d", consumoTotal(tabla));
+		System.out.printf("El consumo total de toda la semana es: %d.\n", consumoTotal(tabla));
+		consumoMinimoHoras(tabla);
+		consumoMinimoTotalHora(tabla);
 	}
 	
-	public static String consumoMinimoHoras(int [][] tabla) {
-		int resultado = 0, acumulador = 0;
-		int dias = 7, horas = 23; 
-		String dia = "";
-		
-		for (int contador = 0; contador < tabla.length; contador++) {
-			for (int contador1 = 0; contador1 < tabla[contador].length; contador1++) {
-				if (tabla[contador][contador1] < tabla[acumulador]) {
+	// Apartado A: Consumo mínimo cada hora
+	public static void consumoMinimoHoras(int[][] tabla) {
+	    String[] dias = {
+	        "Lunes", "Martes", "Miércoles",
+	        "Jueves", "Viernes", "Sábado", "Domingo"
+	    };
+
+	    for (int hora = 0; hora < tabla[0].length; hora++) {
+	        int min = tabla[0][hora];
+	        int diaMin = 0;
+
+	        for (int dia = 1; dia < tabla.length; dia++) {
+	            if (tabla[dia][hora] < min) {
+	                min = tabla[dia][hora];
+	                diaMin = dia;
+	            }
+	        }
+
+	        System.out.println(
+	            "Hora " + (hora + 1)  +
+	            ": consumo mínimo = " + min +
+	            " (" + dias[diaMin] + ")"
+	        );
+	    }
+	}
+	
+	//Apartado B: Hora con consumo minimo total a lo largo de la semana
+	public static void consumoMinimoTotalHora (int [][] tabla) {
+			
+			int horaMin = 0;  
+			double media = 0, mediaMinima = 2000000;
+			
+			for (int i = 0; i < tabla[0].length; i++) {
+				int sumaFila = 0; 
+				
+				for (int j = 0; j < tabla.length; j++) {
+					sumaFila = sumaFila + tabla[j][i];
 					
 				}
+				media = sumaFila / (double)(7);
+				
+				if (media < mediaMinima) {
+					mediaMinima = media;
+					horaMin = i + 1;
+				}
 			}
-		}
+			
+			System.out.printf("A lo largo de la semana, la hora que tiene un consumo mínimo son las %d, con una media de: %.2f.\n", horaMin, media);
 		
-		if (resultado == 1) {
-			dia = "Lunes";
-		}else if (resultado == 2) {
-			dia = "Martes";
-		}else if (resultado == 3) {
-			dia = "Miercoles";
-		}else if (resultado == 4) {
-			dia = "Jueves";
-		}else if (resultado == 5) {
-			dia = "Viernes";
-		}else if (resultado == 6) {
-			dia = "Sabado";
-		}else {
-			dia = "Domingo";
 		}
-		
-		return dia;
-	}
 	
 	//Apartado C: Consumo Total
-	
 	public static int consumoTotal (int [][] tabla) {
 		
-		int suma = 0; 
-		int dias = 7, horas = 24; 
+		int suma = 0;  
 		
-		
-		for (int contador = 0; contador < tabla.length; contador++) {
-			for (int contador1 = 0; contador1 < tabla[contador].length; contador1++) {
-				suma = suma + tabla[contador][contador1];
+		for (int i = 0; i < tabla.length; i++) {
+			for (int j = 0; j < tabla[i].length; j++) {
+				suma = suma + tabla[i][j];
 			}
 		}
 		
 		return suma; 
+	
 	}
+	
+	//Apartado D: Para cada hora, encontrar el primer día con consumo inferiror a 10
+	public static void DiaInferiorA10 (int [][] tabla) {
+		
+		String[] dias = {
+		        "Lunes", "Martes", "Miércoles",
+		        "Jueves", "Viernes", "Sábado", "Domingo"
+		    };
 
+		    for (int hora = 0; hora < tabla[0].length; hora++) {
+		        int min = tabla[0][hora];
+		        int diaMin = 0;
+
+		        for (int dia = 1; dia < tabla.length; dia++) {
+		            if (tabla[dia][hora] < min) {
+		                min = tabla[dia][hora];
+		                diaMin = dia;
+		            }
+		        }
+
+		        System.out.println(
+		            "Hora " + (hora + 1)  +
+		            ": consumo mínimo = " + min +
+		            " (" + dias[diaMin] + ")"
+		        );
+		    }
+	}
+	
 }
