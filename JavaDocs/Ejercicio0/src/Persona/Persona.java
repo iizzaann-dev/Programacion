@@ -11,9 +11,22 @@ public class Persona {
     public static final short MIN_ALUMNOS_CLASE = 10;
     public static final LocalTime horaMaxCentro = LocalTime.of(21, 30);
     
+    //Atributos para constructores por omisión
+    public static final String DNI_ESTABLECIDO = "00000000Ts";
+    public static final String NOMBRE_ESTABLECIDO = "Anónimo";
+    public static final String APELLIDO1_ESTABLECIDO = "Primer apellido anónimo";
+    public static final String APELLIDO2_ESTABLECIDO = "Segundo apellido2 anónimo";
+    public static final LocalDate FECHA_NACIMIENTO = LocalDate.of(2000, 01, 01);
+    public static final float PESO = 65; 
+    public static final float ALTURA = 1.75f;
+    public static final boolean MAYOR_EDAD = false;
+    public static final byte NUM_HERMANOS = 1; 
+    public static final LocalTime HORA_MAX_ALUMNO_CENTRO = LocalTime.of (21, 30);
+    
+    
 	// Atributos
     private static short numAlumnos;
-    
+  
     private LocalTime horaMaxAlumnoCentro;
     private String dni;
     private String nombre;
@@ -27,8 +40,8 @@ public class Persona {
     
     
     //Throws IllegalArgumentException
-    public Persona (String dni, String nombre, String apellido1, String apellido2, LocalDate fechaNacimiento, byte peso, byte altura, boolean mayorEdad, byte numHermanos, 
-    		short numAlumnos, LocalTime horaMaxAlumnoCentro) throws IllegalArgumentException {
+    public Persona (String dni, String nombre, String apellido1, String apellido2, LocalDate fechaNacimiento, float peso, float altura, boolean mayorEdad, byte numHermanos,
+    		LocalTime horaMaxAlumnoCentro) throws IllegalArgumentException {
     	
     	
     	
@@ -81,14 +94,55 @@ public class Persona {
     }
 
     public Persona () {
-    	this();
+    	this(DNI_ESTABLECIDO, NOMBRE_ESTABLECIDO, APELLIDO1_ESTABLECIDO, APELLIDO2_ESTABLECIDO, FECHA_NACIMIENTO, PESO, ALTURA, MAYOR_EDAD, NUM_HERMANOS, HORA_MAX_ALUMNO_CENTRO);
     }
     
+    public Persona (String dni, String nombre, String apellido1, String apellido2) {
+    	this(dni, nombre, apellido1, apellido2, FECHA_NACIMIENTO, PESO, ALTURA, MAYOR_EDAD, NUM_HERMANOS, HORA_MAX_ALUMNO_CENTRO);	
+    }
+    
+ // GETTERS
+    public String getDni() { 
+    	return dni; 
+    	} 
+    public String getNombre() { 
+    	return nombre; 
+    	} 
+    public String getApellido1() { 
+    	return apellido1; 
+    	} 
+    public String getApellido2() { 
+    	return apellido2; 
+    	} 
+    public LocalDate getFechaNacimiento() { 
+    	return fechaNacimiento; 
+    	} 
+    public float getPeso() { 
+    	return peso; 
+    	}
+    public float getAltura() { 
+    	return altura; 
+    	} 
+    public boolean isMayorEdad() { 
+    	return mayorEdad; 
+    	} 
+    public byte getNumHermanos() { 
+    	return numHermanos; 
+    	} 
+    public LocalTime getHoraMaxAlumnoCentro() { 
+    	return horaMaxAlumnoCentro; 
+    	}
+    
+    //Métodos
     public static boolean DNIvalido (String DNI) {
+    	if (DNI == null) return false;
+
     	boolean resultado = false;
     	
     	if (!DNI.matches("^[0-9]{8}[A-HJ-NP-TV-Z]$")) {
     		resultado = false; 
+    	}else {
+    		resultado = true;
     	}
     	
     	return resultado;

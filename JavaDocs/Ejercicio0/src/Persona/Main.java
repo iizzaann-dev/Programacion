@@ -5,63 +5,41 @@ import java.time.LocalTime;
 
 public class Main {
     public static void main(String[] args) {
-        
-        // -------- Caso 1: Datos válidos --------
-        try {
-            Persona p1 = new Persona(
-                "12345678Z",               // DNI válido
-                "Juan",                    // Nombre
-                "Pérez",                   // Apellido1
-                "García",                  // Apellido2
-                LocalDate.of(2000, 5, 10), // Fecha nacimiento válida
-                (byte)70,                  // Peso
-                (byte)175,                 // Altura
-                true,                      // Mayor de edad
-                (byte)2,                   // Número de hermanos
-                (short)100,                // Número alumnos
-                LocalTime.of(20, 0)        // Hora máxima alumno centro
-            );
-            System.out.println("Persona creada correctamente: " + p1);
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error al crear Persona: " + e.getMessage());
-        }
-        
-        // -------- Caso 2: DNI inválido --------
-        try {
-            Persona p2 = new Persona( 			//Tiene que haber la misma cantidad (si en el constructor hay 3 String hay que poner solo 3 Strings)
-                "1234Z",                   // DNI inválido
-                "Ana",
-                "López",
-                "Martínez",
-                LocalDate.of(2010, 1, 1),
-                (byte)60,
-                (byte)160,
-                false,
-                (byte)1,
-                (short)50,
-                LocalTime.of(19, 0)
-            );
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error esperado (DNI inválido): " + e.getMessage());
-        }
-        
-        // -------- Caso 3: Fecha de nacimiento inválida --------
-        try {
-            Persona p3 = new Persona(
+
+        System.out.println("=== PRUEBA 1: Constructor por defecto ===");
+        Persona p1 = new Persona();
+        mostrarPersona(p1);
+
+        System.out.println("\n=== PRUEBA 2: Constructor con 4 parámetros ===");
+        Persona p2 = new Persona("12345678Z", "Carlos", "López", "Martín");
+        mostrarPersona(p2);
+
+        System.out.println("\n=== PRUEBA 3: Constructor completo ===");
+        Persona p3 = new Persona(
                 "87654321X",
-                "Luis",
-                "Sánchez",
+                "María",
                 "Gómez",
-                LocalDate.of(1995, 6, 15), // Fecha anterior al 2000
-                (byte)80,
-                (byte)180,
+                "Ruiz",
+                LocalDate.of(2005, 5, 10),
+                55.4f,
+                1.62f,
                 true,
-                (byte)3,
-                (short)200,
-                LocalTime.of(21, 0)
-            );
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error esperado (fecha inválida): " + e.getMessage());
-        }
+                (byte) 2,
+                LocalTime.of(20, 45)
+        );
+        mostrarPersona(p3);
+    }
+
+    public static void mostrarPersona(Persona p) {
+        System.out.println("DNI: " + p.getDni());
+        System.out.println("Nombre: " + p.getNombre());
+        System.out.println("Apellido1: " + p.getApellido1());
+        System.out.println("Apellido2: " + p.getApellido2());
+        System.out.println("Fecha nacimiento: " + p.getFechaNacimiento());
+        System.out.println("Peso: " + p.getPeso());
+        System.out.println("Altura: " + p.getAltura());
+        System.out.println("Mayor de edad: " + p.isMayorEdad());
+        System.out.println("Número de hermanos: " + p.getNumHermanos());
+        System.out.println("Hora máxima centro: " + p.getHoraMaxAlumnoCentro());
     }
 }
