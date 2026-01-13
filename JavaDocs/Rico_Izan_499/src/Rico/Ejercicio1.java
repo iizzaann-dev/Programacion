@@ -18,6 +18,7 @@ public class Ejercicio1 {
 		System.out.printf("El consumo total de toda la semana es: %d.\n", consumoTotal(tabla));
 		consumoMinimoHoras(tabla);
 		consumoMinimoTotalHora(tabla);
+		DiaInferiorA10(tabla);
 	}
 	
 	// Apartado A: Consumo mínimo cada hora
@@ -89,27 +90,25 @@ public class Ejercicio1 {
 	//Apartado D: Para cada hora, encontrar el primer día con consumo inferiror a 10
 	public static void DiaInferiorA10 (int [][] tabla) {
 		
+		int minimo = 0;
+		
 		String[] dias = {
 		        "Lunes", "Martes", "Miércoles",
 		        "Jueves", "Viernes", "Sábado", "Domingo"
 		    };
 
-		    for (int hora = 0; hora < tabla[0].length; hora++) {
-		        int min = tabla[0][hora];
-		        int diaMin = 0;
+		 for (int hora = 0; hora < tabla[0].length; hora++) {
+		        boolean bandera = false;
 
-		        for (int dia = 1; dia < tabla.length; dia++) {
-		            if (tabla[dia][hora] < min) {
-		                min = tabla[dia][hora];
-		                diaMin = dia;
-		            }
+		        for (int dia = 0; dia < tabla.length && bandera == false; dia++) {
+		        	if (tabla[dia][hora] <10) {
+		        		bandera = true;
+			        	minimo = tabla[dia][hora];
+			        	System.out.printf("Para la hora %d, el primer dia con un consumo inferior a 10 es %s (%d).\n", hora, dias[dia], minimo);
+			        }
 		        }
 
-		        System.out.println(
-		            "Hora " + (hora + 1)  +
-		            ": consumo mínimo = " + min +
-		            " (" + dias[diaMin] + ")"
-		        );
+		       
 		    }
 	}
 	
