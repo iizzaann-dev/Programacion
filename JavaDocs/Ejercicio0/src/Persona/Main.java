@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("=== PRUEBA 1: Constructor por defecto ===");
-        Persona p1 = new Persona();
+        Persona p1 = new Persona("12233445F", "Raquel", "González", "Díaz Ropero", LocalDate.of(2005, 5, 10), 55.4f, 1.62f, true, (byte) 2, LocalTime.of(20, 45));
         mostrarPersona(p1);
 
         System.out.println("\n=== PRUEBA 2: Constructor con 4 parámetros ===");
@@ -15,18 +15,7 @@ public class Main {
         mostrarPersona(p2);
 
         System.out.println("\n=== PRUEBA 3: Constructor completo ===");
-        Persona p3 = new Persona(
-                "87654321X",
-                "María",
-                "Gómez",
-                "Ruiz",
-                LocalDate.of(2005, 5, 10),
-                55.4f,
-                1.62f,
-                true,
-                (byte) 2,
-                LocalTime.of(20, 45)
-        );
+        Persona p3 = new Persona("87654321X", "María", "Gómez", "Ruiz", LocalDate.of(2005, 5, 10), 55.4f, 1.62f, true, (byte) 2, LocalTime.of(20, 45));
         mostrarPersona(p3);
     }
 
