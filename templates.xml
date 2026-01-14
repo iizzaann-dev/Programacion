@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="añade descripcion, autor y fecha" enabled="true" name="descripcion">/*&#13;
+ *Descripción:&#13;
+ *Nombre: Izan Rico Blanco&#13;
+ *Fecha: ${date:date('dd/MM/yyyy')}&#13;
+*/&#13;
+</template><template autoinsert="true" context="java-statements" deleted="false" description="Escribir System.out.print()" enabled="true" name="print">System.out.print("${cursor}");&#13;
+</template><template autoinsert="true" context="java" deleted="false" description="hace un printf" enabled="true" name="printf">System.out.printf("${cursor}");</template><template autoinsert="true" context="java-statements" deleted="false" description="Escribir System.out.println()" enabled="true" name="println">System.out.println("${cursor}");&#13;
+</template><template autoinsert="true" context="java" deleted="false" description="println sin comillas" enabled="true" name="printlnSin">System.out.println(${cursor});</template><template autoinsert="true" context="java" deleted="false" description="print sin comillas" enabled="true" name="printSin">System.out.print(${cursor});</template><template autoinsert="true" context="java-statements" deleted="false" description="&quot;Organizar Imports&quot; (Ctrl + Shift + O)" enabled="true" name="scanner">Scanner teclado = new Scanner(System.in);</template></templates>
