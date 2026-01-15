@@ -1,6 +1,6 @@
 package Ejercicio_A3;
 
-public class Main_A2 {
+public class Main_A3 {
 
 	public static void main(String[] args) {
 		
