@@ -1,4 +1,4 @@
-package Ejercicio_A1;
+	package Ejercicio_A1;
 
 public class Punto {
 	
