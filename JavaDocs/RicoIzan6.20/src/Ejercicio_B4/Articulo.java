@@ -6,4 +6,8 @@ public class Articulo {
 	double precio; 
 	double iva;
 	int cuantosQuedan;
+	
+	public Articulo (String nombre,double precio, double iva, int cuantosQuedan) {
+		
+	}
 }
