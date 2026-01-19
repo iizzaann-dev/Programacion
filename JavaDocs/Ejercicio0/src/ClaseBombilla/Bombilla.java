@@ -94,14 +94,14 @@ public class Bombilla {
 			Bombilla.bombillasEncendidas++;
 			
 		}else {
-			throw new IllegalStateException("Se ha intentado encender una bombilla ya encendida.");
+			throw new IllegalStateException("Se ha intentado encender una bombilla ya encendida");
 		}
 	}
 	
 	public void apagar ()throws IllegalStateException{
 		
 		if (this.estado == false) {
-			throw new IllegalStateException("Se ha intentado apagar una bombilla ya apagada.");
+			throw new IllegalStateException("Se ha intentado apagar una bombilla ya apagada");
 			
 		}else {
 			this.estado = false;
