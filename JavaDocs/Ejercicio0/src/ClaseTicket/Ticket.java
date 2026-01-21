@@ -5,23 +5,19 @@ import java.time.LocalTime;
 
 public class Ticket {
 
-    // ATRIBUTOS DE CLASE
-    // ------------------
     // Atributos de clase constantes
-    private static int MAX_SEQUENCE = 99_999_999;  // Máximo número de secuencia en id
+	public static final int MAXIMO_DIGITO = 99999999;  
 
     // Atributos de clase variables 
-    private static short lastYear = (short) LocalDate.now().getYear();  // Año actual
-    private static int lastSequence = 0;  // Inicio de secuencia
+    private static short lastYear = (short) LocalDate.now().getYear();  
+    private static int ultimoDigito = 0;  
 
-    // ATRIBUTOS DE OBJETO
-    // -------------------
     // Atributos de objeto inmutables
-    private final LocalDate fecha;  // Fecha para usar el ticket
-    private final String id;        // Id del ticket
+    private final LocalDate fecha;  
+    private final String id;       
 
-    // Atributos de objeto variables (estado)
-    private LocalTime usado;  // Momento de uso del ticket
+    // Atributos de objeto variables 
+    private LocalTime usado; 
     
     
     public Ticket(LocalDate fecha) throws IllegalStateException, IllegalArgumentException{
@@ -31,16 +27,61 @@ public class Ticket {
     	  }
     	  
     	  if (fecha.isBefore(hoy)) {
-    		  throw new IllegalArgumentException ("El uso del ticket es anterior a hoy (%s)" + hoy);
+    		  throw new IllegalArgumentException("El uso del ticket es anterior a hoy (" + hoy + ")");
     	  }
     	  
     	  if (fecha.getYear() > hoy.getYear()) {
     		  throw new IllegalArgumentException ("El uso del ticker es posteriror al año actual" + fecha);
     	  }
+    	  
+    	  if (Ticket.lastYear != (short)hoy.getYear()) {
+    		  Ticket.ultimoDigito = 0; 
+    		  Ticket.lastYear++;
+    	  }
+    	  
+    	  if (Ticket.ultimoDigito == Ticket.MAXIMO_DIGITO) {
+    		  throw new IllegalStateException("Se han alcanzado la cantidad total de tickets");
+    	  }
+    	  this.fecha = fecha;
+    	  this.id = generarId();
+    	  this.usado = null;
     }
     
     
-    public Ticket() throws IllegalStateException {
+	public Ticket() throws IllegalStateException {
     	  this(LocalDate.now());
     	}
+	
+    //Métodos
+	private String generarId() {
+		
+		String identificador = "";
+		Ticket.ultimoDigito++;
+		
+		identificador = String.format("%04d-%08d", this.fecha.getYear(), Ticket.ultimoDigito);
+		
+		return identificador;
+	}
+	
+	private boolean isUsado() {
+		if (this.usado == null) {
+			return false;
+		}else {
+			return true;
+		}
+	}
+	
+	
+	//Getters
+	public LocalDate getFecha() {
+	    return this.fecha;
+	}
+	
+	//ToString
+	@Override
+	public String toString() {
+			
+		return null;
+	  }
+
 }
