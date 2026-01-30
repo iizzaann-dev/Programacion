@@ -37,8 +37,7 @@ public class Cancion {
 	}
 	
 	public Cancion(Cancion otra) {
-	    this.titulo = otra.titulo;
-	    this.autor = otra.autor;
+		this(otra.titulo, otra.autor);
 	}
 
 	
