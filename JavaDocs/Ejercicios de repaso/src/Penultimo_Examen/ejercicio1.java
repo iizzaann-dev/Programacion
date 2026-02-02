@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Penultimo_Examen;
 
 public class ejercicio1 {
@@ -42,3 +43,15 @@ public class ejercicio1 {
 	}
 
 }
+=======
+package Penultimo_Examen;
+
+public class ejercicio1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+>>>>>>> 8285612a7ea41ca5e5d9c55f651b4130a1436913
