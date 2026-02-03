@@ -104,7 +104,7 @@ public class PlayamarBank {
 	
 	//Metodos (acciones)
 	
-	public void embargar (double cantidad_a_embargar) throws IllegalArgumentException, IllegalStateException{
+	public void embargar (double cantidad_a_embargar) throws IllegalArgumentException, IllegalStateException{		//Se embarga una cantidad de una cuenta
 		
 		if (cantidad_a_embargar < 0) {
 			throw new IllegalArgumentException("La cantidad a embargar no puede ser menor de 0 euros");
@@ -120,7 +120,41 @@ public class PlayamarBank {
 		
 		this.embargo = cantidad_a_embargar;
 	}
-
+	
+	public boolean desembargar (double cantidad_a_desembargar){			//Se desembarga al completo una cuenta
+		
+		boolean decision = false;
+		
+		if (embargo != 0) {
+			decision = true;
+			embargo = 0;
+			
+		}else {
+			decision = false;
+		}
+		
+		return decision;
+	}
+	
+	public void ingresar (double cantidad) throws IllegalArgumentException, IllegalStateException {		//Se ingresan dinero en una cuenta
+		
+		if(cantidad < 0) {
+			throw new IllegalArgumentException("No se puede ingresar una cantidad de dinero negativa");
+		}
+		
+		if (cantidad > MAX_SALDO) {
+			throw new IllegalStateException("No se puede ingresar una cantidad de dinero superior a la máxima permitida en una cuenta");
+		}
+		
+		if (cantidad + saldoActual > MAX_SALDO) {
+			throw new IllegalStateException("No se puede ingresar una cantidad de dinero que junto al dinero presente en la cuenta " +
+					"supere al dinero máximo permitido en una cuenta");
+		}
+		
+		this.saldoActual = saldoActual + cantidad;
+	}
+	
+	
 	
 	//Getters
 	
