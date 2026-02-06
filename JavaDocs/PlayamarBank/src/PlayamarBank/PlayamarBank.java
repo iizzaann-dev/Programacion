@@ -411,7 +411,7 @@ public class PlayamarBank {
 	 *
 	 * <p>El formato resultante es:</p>
 	 * <pre>
-	 * Id: <identificador> - Saldo: <saldo> - Embargada: <sí/no [porcentaje]>
+	 * Id: identificador - Saldo: saldo - Embargada: sí/no [porcentaje]
 	 * </pre>
 	 *
 	 * @return una cadena que representa el estado actual de la cuenta.
