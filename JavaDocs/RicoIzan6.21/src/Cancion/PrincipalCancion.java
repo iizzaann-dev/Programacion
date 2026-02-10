@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package Cancion;
 
 public class PrincipalCancion {
@@ -23,7 +22,6 @@ public class PrincipalCancion {
         System.out.println(c3);
     }
 }
-=======
 package Cancion;
 
 public class PrincipalCancion {
@@ -71,4 +69,3 @@ public class PrincipalCancion {
 	}
 
 }
->>>>>>> 18a5ece0cb1fee4e4741275300f35b96527b28f8
