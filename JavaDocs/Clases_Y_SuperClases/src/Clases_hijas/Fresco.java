@@ -1,7 +1,6 @@
 package Clases_hijas;
 
 import java.time.LocalDate;
-
 import clase_padre.Productos;
 
 public class Fresco extends Productos {
