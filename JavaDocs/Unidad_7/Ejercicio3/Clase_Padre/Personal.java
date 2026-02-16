@@ -73,6 +73,7 @@ abstract class Personal {
 		this.fecha_nacimiento = fecha_nacimiento;
 		this.DNI = generarDNI();
 	}
+	
 
 	private String generarDNI() {
 	    if (ultimoNumeroDNI > 99999999) ultimoNumeroDNI = 10000000;
