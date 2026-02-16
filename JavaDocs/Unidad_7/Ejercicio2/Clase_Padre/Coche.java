@@ -13,6 +13,12 @@ public class Coche {
 	protected int cilindrada;
 	protected int potencia;
 	
+	private static final String LETRAS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	private static int indiceLetra1 = 0;
+	private static int indiceLetra2 = 0;
+	private static int indiceLetra3 = 0;
+	private static int numero = 0;
+	
 	public Coche (String nombre_propietario, String matricula, LocalDate fecha_matriculacion, int cilindrada, int potencia) throws IllegalArgumentException {
 		
 		if (nombre_propietario.isBlank()) {
@@ -27,24 +33,22 @@ public class Coche {
 			throw new IllegalArgumentException("La fecha de matriculación de un coche no puede ser anterior al año 2000 debido a la ley de la UE");
 		}
 		
-		if (cilindrada < 400) {
-			throw new IllegalArgumentException("La cilindrada es demasiado baja");
-		}
-		
 		if (cilindrada < 0) {
 			throw new IllegalArgumentException("La cilindrada no puede ser negativa");
 		}
-		
-		if (potencia < 50) {
-			throw new IllegalArgumentException("La potencia es demasiado baja");
-		}
-		
+				
 		if (potencia < 0) {
 			throw new IllegalArgumentException("La potencia no puede ser negativa");
 		}
 		
+		if (matricula == null || matricula.isBlank()) {
+	        this.matricula = generarMatricula(); 
+	        
+	    } else {
+	        this.matricula = matricula;
+	    }
+		
 		this.nombre_propietario = nombre_propietario;
-		this.matricula = matricula; 
 		this.fecha_matriculacion = fecha_matriculacion;
 		this.cilindrada = cilindrada;
 		this.potencia = potencia;
@@ -52,16 +56,10 @@ public class Coche {
 	}
 	
 	public Coche () {
-		this("Desconocido", generarMatricula(), LocalDate.now(), 600, 75);
+		this("Desconocido", generarMatricula(), LocalDate.now(), 2000, 150);
 	}
 	
 	private static String generarMatricula () {
-		
-		String LETRAS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		 int indiceLetra1 = 0;
-		 int indiceLetra2 = 0;
-		 int indiceLetra3 = 0;
-		 int numero = 0;
 		 
 		 String matricula = "" + LETRAS.charAt(indiceLetra1) + LETRAS.charAt(indiceLetra2) + LETRAS.charAt(indiceLetra3) + String.format("%04d", numero);
 		 
@@ -89,4 +87,54 @@ public class Coche {
 		
 		return matricula; 
 	}
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public LocalDate getFecha_matriculacion() {
+		return fecha_matriculacion;
+	}
+
+	public String getNombre_propietario() {
+		return nombre_propietario;
+	}
+
+	public int getCilindrada() {
+		return cilindrada;
+	}
+
+	public int getPotencia() {
+		return potencia;
+	}
+
+	public void setNombre_propietario(String nombre_propietario) {
+		this.nombre_propietario = nombre_propietario;
+	}
+
+	public void setCilindrada(int cilindrada) throws IllegalArgumentException {
+		
+		if (cilindrada < 0) {
+			throw new IllegalArgumentException ("La cilindrada no puede ser negativa");
+		}else {
+			this.cilindrada = cilindrada;
+		}
+	}
+
+	public void setPotencia(int potencia) throws IllegalArgumentException {
+		if(potencia < 0) {
+			throw new IllegalArgumentException("La potencia no puede ser negativa");
+		}else {
+			this.potencia = potencia;
+
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Coche [matricula = " + matricula + ", fecha_matriculacion = " + fecha_matriculacion
+				+ ", nombre_propietario = " + nombre_propietario + ", cilindrada = " + cilindrada + ", potencia = " + potencia;
+	}
+	
+	
 }
