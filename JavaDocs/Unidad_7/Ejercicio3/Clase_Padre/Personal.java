@@ -93,7 +93,6 @@ abstract class Personal {
 		
 	}
 	
-	
 	@Override
 	public String toString() {
 		return "Personal [DNI=" + DNI + ", fecha_nacimiento=" + fecha_nacimiento + ", nombre=" + nombre + ", apellidos="
