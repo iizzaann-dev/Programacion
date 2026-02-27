@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup Eclipse Projects",
+      "type": "shell",
+      "command": "bash .devcontainer/setup-eclipse.sh",
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
