@@ -1,0 +1,5 @@
+{
+  "name": "Java Multi Project",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "postCreateCommand": "sh .devcontainer/setup-eclipse.sh"
+}
