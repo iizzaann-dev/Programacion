@@ -3,6 +3,7 @@ FILE="$1"
 
 # Solo procesar archivos .java vacíos
 if [[ "$FILE" == *.java && ! -s "$FILE" ]]; then
+    # Detectar el paquete relativo a src/
     PACKAGE=$(echo "$FILE" | sed -E 's|.*src/([^/]+(/[^/]+)*)/[^/]+\.java|\1|' | tr '/' '.')
     CLASSNAME=$(basename "$FILE" .java)
 
@@ -17,5 +18,6 @@ public class $CLASSNAME {
     }
 }
 EOF
+
     echo "✔ Archivo $FILE generado con paquete $PACKAGE y clase $CLASSNAME"
 fi

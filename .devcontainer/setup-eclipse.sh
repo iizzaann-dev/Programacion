@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Revisar todas las carpetas dentro de JavaDocs
+# Recorre todas las carpetas dentro de JavaDocs
 for dir in JavaDocs/*; do
     if [ -d "$dir" ]; then
         # Crear estructura mínima si no existe
@@ -31,6 +31,13 @@ EOF
   </natures>
 </projectDescription>
 EOF
+        fi
+
+        # Crear Main.java de ejemplo con paquete automático
+        MAIN_FILE="$dir/src/com/app/Main.java"
+        mkdir -p "$(dirname "$MAIN_FILE")"
+        if [ ! -f "$MAIN_FILE" ]; then
+            bash .devcontainer/generate-java.sh "$MAIN_FILE"
         fi
     fi
 done

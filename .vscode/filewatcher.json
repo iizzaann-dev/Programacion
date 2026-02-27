@@ -1,0 +1,14 @@
+[
+    {
+        "fileRegex": ".*\\.java$",
+        "event": "create",
+        "command": "bash .devcontainer/generate-java.sh ${file}",
+        "workingDirectory": "${workspaceFolder}"
+    },
+    {
+        "fileRegex": "JavaDocs/.*/\\.placeholder$",
+        "event": "create",
+        "command": "bash .devcontainer/setup-eclipse.sh",
+        "workingDirectory": "${workspaceFolder}"
+    }
+]
