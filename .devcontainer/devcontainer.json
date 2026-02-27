@@ -1,6 +1,0 @@
-{
-  "name": "Java Multi Project Auto",
-  "image": "mcr.microsoft.com/devcontainers/java:17",
-  "postCreateCommand": "bash .devcontainer/setup-eclipse.sh",
-  "updateContentCommand": "bash .devcontainer/setup-eclipse.sh"
-}

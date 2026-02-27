@@ -1,5 +1,0 @@
-{
-  "name": "Java Auto Setup",
-  "image": "mcr.microsoft.com/devcontainers/java:17",
-  "postCreateCommand": "sh .devcontainer/setup-eclipse.sh"
-}
