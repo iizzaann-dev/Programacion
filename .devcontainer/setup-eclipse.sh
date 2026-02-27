@@ -1,16 +1,15 @@
 #!/bin/bash
 
-ROOT="JavaDocs"
-JAVA_VERSION=$(java -version 2>&1 | awk -F '"' '/version/ {print $2}')
-echo "Usando Java $JAVA_VERSION"
+# Revisar todas las carpetas dentro de JavaDocs
+for dir in JavaDocs/*; do
+    if [ -d "$dir" ]; then
+        # Crear estructura mínima si no existe
+        [ ! -d "$dir/src" ] && mkdir -p "$dir/src"
+        [ ! -d "$dir/bin" ] && mkdir -p "$dir/bin"
 
-for dir in "$ROOT"/*; do
-  if [ -d "$dir" ] && ( [ -d "$dir/src" ] || [ -d "$dir/bin" ] ); then
-    echo "Configurando proyecto: $dir"
-    mkdir -p "$dir/src" "$dir/bin"
-
-    if [ ! -f "$dir/.classpath" ]; then
-      cat > "$dir/.classpath" <<EOF
+        # Crear archivos de Eclipse si no existen
+        if [ ! -f "$dir/.classpath" ]; then
+            cat > "$dir/.classpath" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
   <classpathentry kind="src" path="src"/>
@@ -18,11 +17,11 @@ for dir in "$ROOT"/*; do
   <classpathentry kind="output" path="bin"/>
 </classpath>
 EOF
-    fi
+        fi
 
-    if [ ! -f "$dir/.project" ]; then
-      name=$(basename "$dir")
-      cat > "$dir/.project" <<EOF
+        if [ ! -f "$dir/.project" ]; then
+            name=$(basename "$dir")
+            cat > "$dir/.project" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
   <name>$name</name>
@@ -32,10 +31,6 @@ EOF
   </natures>
 </projectDescription>
 EOF
+        fi
     fi
-  else
-    echo "Ignorando carpeta no válida: $dir"
-  fi
 done
-
-echo "✅ Todos los proyectos listos para Eclipse"

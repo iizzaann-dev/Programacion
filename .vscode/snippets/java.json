@@ -1,0 +1,15 @@
+{
+  "Java class template": {
+    "prefix": "newjava",
+    "body": [
+      "package ${TM_DIRECTORY/(JavaDocs\\/[^\\/]+\\/)(.*)/${1:+com.${2:/downcase}}/};",
+      "",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        System.out.println(\"Clase ${TM_FILENAME_BASE} lista\");",
+      "    }",
+      "}"
+    ],
+    "description": "Crea un archivo Java con paquete y main automáticamente"
+  }
+}
