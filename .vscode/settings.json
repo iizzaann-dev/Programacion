@@ -1,0 +1,12 @@
+{
+  "filewatcher.commands": [
+    {
+      "match": "\\.java$",
+      "cmd": "bash .devcontainer/generate-java.sh ${file}"
+    },
+    {
+      "match": "JavaDocs/[^/]+$",
+      "cmd": "bash .devcontainer/init-projects.sh"
+    }
+  ]
+}
