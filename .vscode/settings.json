@@ -8,5 +8,7 @@
       "match": "JavaDocs/[^/]+$",
       "cmd": "bash .devcontainer/init-projects.sh"
     }
-  ]
+  ],
+  "java.project.openProjectInNewWindow": false,
+  "window.openFoldersInNewWindow": "off"
 }

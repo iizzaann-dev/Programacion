@@ -7,6 +7,10 @@ for dir in "$ROOT"/*; do
 
   mkdir -p "$dir/src" "$dir/bin" "$dir/lib"
 
+  # borrar paquetes basura
+  rm -rf "$dir/src/com" 2>/dev/null
+  rm -rf "$dir/src/app" 2>/dev/null
+
   # .project
   if [ ! -f "$dir/.project" ]; then
     name=$(basename "$dir")
