@@ -5,16 +5,16 @@ ROOT="JavaDocs"
 for dir in "$ROOT"/*; do
   [ -d "$dir" ] || continue
 
+  name=$(basename "$dir")
+
   mkdir -p "$dir/src" "$dir/bin" "$dir/lib"
 
-  # borrar paquetes basura
-  rm -rf "$dir/src/com" 2>/dev/null
-  rm -rf "$dir/src/app" 2>/dev/null
+  # limpiar basura
+  rm -rf "$dir/src/com" "$dir/src/app" 2>/dev/null
 
   # .project
   if [ ! -f "$dir/.project" ]; then
-    name=$(basename "$dir")
-    cat > "$dir/.project" <<EOF
+cat > "$dir/.project" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
   <name>$name</name>
@@ -28,17 +28,23 @@ EOF
 
   # .classpath
   if [ ! -f "$dir/.classpath" ]; then
-    echo '<?xml version="1.0" encoding="UTF-8"?>' > "$dir/.classpath"
-    echo '<classpath>' >> "$dir/.classpath"
-    echo '<classpathentry kind="src" path="src"/>' >> "$dir/.classpath"
-    echo '<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>' >> "$dir/.classpath"
+cat > "$dir/.classpath" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+<classpathentry kind="src" path="src"/>
+<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+<classpathentry kind="output" path="bin"/>
+</classpath>
+EOF
+  fi
 
-    for jar in "$dir"/lib/*.jar; do
-      [ -f "$jar" ] && echo "<classpathentry kind=\"lib\" path=\"lib/$(basename "$jar")\"/>" >> "$dir/.classpath"
-    done
-
-    echo '<classpathentry kind="output" path="bin"/>' >> "$dir/.classpath"
-    echo '</classpath>' >> "$dir/.classpath"
+  # .gitignore personalizado
+  if [ ! -f "$dir/.gitignore" ]; then
+cat > "$dir/.gitignore" <<EOF
+bin/
+*.class
+.settings/
+EOF
   fi
 
 done
