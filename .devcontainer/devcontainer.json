@@ -1,0 +1,2 @@
+{"image":"mcr.microsoft.com/devcontainers/universal:2"
+,"features":{"ghcr.io/devcontainers/features/java:2":{"version":"17"}},"postCreateCommand":"./mvnw clean install -DskipTests","remoteUser":"vscode"}

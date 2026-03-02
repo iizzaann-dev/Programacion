@@ -2,10 +2,12 @@ package Mobiliario;
 
 public abstract class Mueble {
 	
+	
+
 	//Atributos inmutables de la clase
 	public static double precio_minimo = 0.01;
 	public static double precio_maximo = 10000.00;
-	
+
 	//Atributos mutables de la clase
 	private static int contador = 0;
 		
@@ -18,7 +20,8 @@ public abstract class Mueble {
 	
 	public Mueble (String descripcion, double precio) throws IllegalArgumentException {
 		
-		if (precio < precio_minimo && precio > precio_maximo) {
+		// el precio no puede ser menor que el mínimo **o** mayor que el máximo
+		if (precio < precio_minimo || precio > precio_maximo) {
 			throw new IllegalArgumentException("El precio no está en el rango permitido: " + String.format("%.2f", precio));
 		}
 		
@@ -34,7 +37,8 @@ public abstract class Mueble {
 	}
 	
 	public String getId() {
-		return String.format("%03d", contador);
+		// usar el identificador del objeto, no el contador estático
+		return String.format("%03d", identificador);
 	}
 
 	public String getDescripcion() {
