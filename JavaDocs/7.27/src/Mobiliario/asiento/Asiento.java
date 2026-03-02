@@ -10,13 +10,13 @@ public abstract class Asiento extends Mueble {
 	
 	//Atributos inmutables del objeto
 	protected final int numPlazas;
-	private final String tapiceria;
-	private final String color;
+	protected final String tapiceria;
+	protected final String color;
 	
 	public Asiento(int numPlazas, String tapiceria, String color, String descripcion, double precio) throws IllegalArgumentException {
 		super(descripcion, precio);
 		
-		if (numPlazas < min_plazas && numPlazas > max_plazas) {
+		if (numPlazas < min_plazas || numPlazas > max_plazas) {
 			throw new IllegalArgumentException("El número de plazas no está en el rango permitido: " + numPlazas);
 		}
 		
