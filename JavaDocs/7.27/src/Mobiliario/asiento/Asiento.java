@@ -43,6 +43,4 @@ public abstract class Asiento extends Mueble {
 		return String.format("%s, Número de plazas: %s, Tapicería: %s, Color: %s",super.toString(), getNumPlazas() , getTapiceria(), getColor());
 	}
 	
-	
-	
 }
