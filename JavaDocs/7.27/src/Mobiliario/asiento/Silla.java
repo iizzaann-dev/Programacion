@@ -17,22 +17,33 @@ public class Silla extends Asiento implements Ajustable {
 			throws IllegalArgumentException {
 		
 		super(Asiento.min_plazas, tapiceria, color, descripcion, precio);
+
+		if (posicion < min_posicion){
+			throw new IllegalArgumentException("La posición del respaldo no puede ser menor de " + min_posicion);
+		}
+
+		if(posicion > max_posicion){
+			throw new IllegalArgumentException("La posición del respaldo no puede ser mayor de " + max_posicion);
+		}
 	}
 
 	@Override
-	public int obtenerPosicion() throws IllegalStateException {
-		if (posicion < MIN_POSICION) {
-			posicion = this.default_posicion_porDefecto;
-			throw new IllegalStateException("La posición actual es menor que la posición mínima permitida: " + posicion 
-			+ "Establecimiento de la posición a posición por defecto: " + default_posicion_porDefecto);
+	public int obtenerPosicion() {
+		return posicion;
+	}
+
+	@Override
+	public void subirPosicion(int nuenvaPosicion) throws IllegalArgumentException {
+		int posicionActual = posicion;
+		if (nuenvaPosicion < MIN_POSICION){
+			throw new IllegalArgumentException("Solo se puede subir la posición del respaldo con un máximo de valor de: " + MAX_POSICION);
+		}
+		posicion = nuenvaPosicion;
+		if(posicion > MAX_POSICION){
+			posicion = MAX_POSICION;
+			throw new IllegalArgumentException("Solo se puede subir la posición del respaldo con un máximo de valor de: " + MAX_POSICION);
 		}
 
-		if (posicion > MAX_POSICION){
-			posicion = this.default_posicion_porDefecto;
-			throw new IllegalStateException("La posición actual es mayor que la posición máxima permitida: " + posicion 
-			+ "Establecimiento de la posición a posición por defecto: " + default_posicion_porDefecto);
-		}
-		
-		return posicion;
+
 	}
 }
