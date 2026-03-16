@@ -26,7 +26,7 @@ public class Silla extends Asiento implements Ajustable {
 			throw new IllegalArgumentException("La posición del respaldo no puede ser mayor de " + max_posicion);
 		}
 	}
-
+	println
 	@Override
 	public int obtenerPosicion() {
 		return posicion;
