@@ -1,7 +1,9 @@
 package Usando_HarshSet;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 public class HarshSet {
 
@@ -53,9 +55,12 @@ public class HarshSet {
 
 		}
 		
+		System.out.println("Los valores del conjunto 2 son: " + conjunto2);
 
 		
-		try {
+
+		//Ejercicio5
+		/* try {
 			System.out.println("El tamaño del conjunto 2 es: " + conjunto2.size());
 			conjunto2.addAll(conjunto);
 			System.out.printf("El contenido del conjunto 2 es:  %s \n", conjunto2);
@@ -68,7 +73,36 @@ public class HarshSet {
 		
 		System.out.println("El tamaño del conjunto 1 es: " + conjunto.size());
 		System.out.println("El tamaño del conjunto 2 es: " + conjunto2.size());
+		*/
 		
+		//Ejercicio 6
+		/*
+		int sumaPares = 0, sumaImpares = 0;
+		for  (Integer contador : conjunto) {
+			int entero = contador.intValue();
+			if (contador % 2 == 0) {
+				sumaPares =+ entero;
+				
+			}else {
+				sumaImpares =+ entero;
+			}
+			
+		}
+		
+		System.out.println("Para el conjunto 1, la suma de los numeros pares es: " + sumaPares);
+		System.out.println("Para el conjunto 1, la suma de los numeros impares es: " + sumaImpares);
+		*/
+		
+		
+		//Ejercicio6 
+		TreeSet <Integer> conjunto3 = new TreeSet<Integer>();
+		for (int contador = 1; contador < 15; contador++) {
+			int numeroAleatorio = 1 + (int)(Math.random() * 100);
+			conjunto3.add(numeroAleatorio);
+		}
+		System.out.println("El conjunto 3 es: " + conjunto3);
+		
+		ArrayList<Integer> miLista = new ArrayList<Integer>();
 		
 		
 
