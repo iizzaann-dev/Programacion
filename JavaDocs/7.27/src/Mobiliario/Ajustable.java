@@ -6,7 +6,7 @@ public interface Ajustable {
     public final int MAX_POSICION = 4;
 
     int obtenerPosicion();
-    void subirPosicion();
-    void bajarPosicion();
+    void subirPosicion(int nuevaPosicion);
+    void bajarPosicion(int nuevaPosicion);
 	
 }
