@@ -11,8 +11,8 @@ import java.util.Comparator;
 
 public class Atleta {
     public String nombre;
-        public int edad;
-        public double altura;
+    public int edad;
+    public double altura;
 
 
     public Atleta(String nombre, int edad, double altura) throws IllegalArgumentException{
@@ -34,9 +34,21 @@ public class Atleta {
         this.altura = altura;
     }
     
+    public int getEdad() {
+    	return edad;
+    }
+    
+    public double getAltura () {
+    	return altura;
+    }
+    
+    public String getNombre () {
+    	return nombre;
+    }
+    
     @Override
     public String toString() {
-        return nombre + " - Edad: " + edad + " - Altura: " + String.format("%02d", altura);
+        return nombre + " - Edad: " + edad + " - Altura: " + String.format("%.2f", altura);
     }
 
 }
