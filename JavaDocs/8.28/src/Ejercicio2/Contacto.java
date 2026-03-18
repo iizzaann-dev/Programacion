@@ -1,0 +1,38 @@
+package Ejercicio2;
+
+import java.time.LocalDate;
+
+public class Contacto {
+
+    //Atributos el objeto
+    public String nombre;
+    public String telefono;
+    public String email;
+    public LocalDate fechaNacimiento;
+
+    public Contacto (String nombre, String telefono, String email, LocalDate fechaNacimiento) throws IllegalArgumentException{
+
+        if (nombre.isBlank()){
+            throw new IllegalArgumentException("No se puede dejar el nombre vacio.");
+        }
+
+        if(nombre.isEmpty()){
+            throw new IllegalArgumentException("No se puede dejar el valor del nombre vacio.");
+        }
+
+        if (telefono.length() < 9){
+        throw new IllegalArgumentException("El número de teléfono debe tener 9 dígitos.");
+        }
+
+        if (!email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+            throw new IllegalArgumentException("Email inválido");
+        }
+
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.email = email;
+        this.fechaNacimiento = fechaNacimiento;
+
+
+    }
+}
