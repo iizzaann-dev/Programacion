@@ -1,6 +1,7 @@
 package Ejercicio2;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Contacto {
 
@@ -36,39 +37,68 @@ public class Contacto {
 
     }
 
+    public int compareTo (Contacto otroNombre){
+        return this.nombre.compareToIgnoreCase(otroNombre.nombre);
+    }
+
     //Getters
-
-
     public String getNombre() {
         return nombre;
     }
 
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public String getEmail() {
-        return email;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     //Setters
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefono() {
+        return telefono;
     }
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    //Equals
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Contacto contacto = (Contacto) o;
+        return Objects.equals(nombre, contacto.nombre) && Objects.equals(telefono, contacto.telefono) && Objects.equals(email, contacto.email) && Objects.equals(fechaNacimiento, contacto.fechaNacimiento);
     }
 
-    public void setFechaNacimiento(LocalDate fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
+    //HashCode
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre, telefono, email, fechaNacimiento);
+    }
+
+    //ToString
+    @Override
+    public String toString() {
+        return "Contacto{" +
+                "nombre='" + nombre + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", email='" + email + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                '}';
     }
 }
+
+
