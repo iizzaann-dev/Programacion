@@ -2,17 +2,21 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
     "ghcr.io/devcontainers/features/java": {
-      "version": "25"
+      "version": "21"
     },
     "ghcr.io/devcontainers/features/maven": "latest",
     "ghcr.io/devcontainers/features/git-lfs": "latest"
   },
   "postCreateCommand": "./mvnw clean install -DskipTests",
-  "extensions": [
-    "vscjava.vscode-java-pack",
-    "redhat.java",
-    "vscjava.vscode-maven",
-    "ms-azuretools.vscode-docker"
-  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "vscjava.vscode-maven",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
   "remoteUser": "vscode"
 }

@@ -4,35 +4,51 @@ import Mobiliario.Ajustable;
 
 public class Silla extends Asiento implements Ajustable {
 	
-	//Atributos inmutables de la clase
-	public static final int min_posicion = 1;
-	public static final int max_posicion = 4;
-	public static final int default_posicion_porDefecto = 0;
 	
 	//Atributos mutables del objeto
-	private int num_posicion_respaldo;
 	private int posicion;
 		
 	public Silla(int numPlazas, String tapiceria, String color, String descripcion, double precio)
 			throws IllegalArgumentException {
 		
 		super(Asiento.min_plazas, tapiceria, color, descripcion, precio);
+
+		
+		this.posicion = MIN_POSICION;
+	}
+	println
+	@Override
+	public int obtenerPosicion() {
+		return posicion;
+	}
+
+
+	@Override
+	public void subirPosicion(int nuevaPosicion) throws IllegalArgumentException {
+
+	    if (posicion + nuevaPosicion > MAX_POSICION) {
+	        throw new IllegalArgumentException(
+	            "No se puede subir tanto el respaldo. Máximo: " + MAX_POSICION);
+	    }
+
+	    posicion = posicion + nuevaPosicion;
+	}
+	
+	@Override
+	public void bajarPosicion(int nuevaPosicion) throws IllegalArgumentException {
+
+	    if (posicion - nuevaPosicion < MIN_POSICION) {
+	        throw new IllegalArgumentException(
+	            "No se puede bajar tanto el respaldo. Mínimo: " + MIN_POSICION);
+	    }
+
+	    posicion = posicion - nuevaPosicion;
 	}
 
 	@Override
-	public int obtenerPosicion() throws IllegalStateException {
-		if (posicion < MIN_POSICION) {
-			posicion = this.default_posicion_porDefecto;
-			throw new IllegalStateException("La posición actual es menor que la posición mínima permitida: " + posicion 
-			+ "Establecimiento de la posición a posición por defecto: " + default_posicion_porDefecto);
-		}
-
-		if (posicion > MAX_POSICION){
-			posicion = this.default_posicion_porDefecto;
-			throw new IllegalStateException("La posición actual es mayor que la posición máxima permitida: " + posicion 
-			+ "Establecimiento de la posición a posición por defecto: " + default_posicion_porDefecto);
-		}
-		
-		return posicion;
+	public String toString() {
+		return super.toString() + "Posicion =" + posicion;
 	}
+	
+	
 }
