@@ -60,7 +60,7 @@ public class main {
                     encontrado = true;
                 }
             }
-
+                
             if (!encontrado){
                 System.out.println("No se ha encontrado el contacto con el nombre " + consultaNombre);
             }
