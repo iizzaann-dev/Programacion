@@ -3,7 +3,7 @@ package Ejercicio2;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Contacto {
+public class Contacto implements Comparable <Contacto>{
 
     //Atributos el objeto
     public String nombre;
