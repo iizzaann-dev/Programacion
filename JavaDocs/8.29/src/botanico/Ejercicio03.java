@@ -1,5 +1,6 @@
 package botanico;
 
+import java.util.Map;
 /** Ejercicio 3. Calendario de especies de plantas
  * @author Profesor
  */
@@ -10,7 +11,7 @@ public class Ejercicio03 {
         //----------------------------------------------
         //    Declaración de variables y constantes
         //----------------------------------------------
-        
+        map 
         // Constantes
         
         // Variables de entrada
