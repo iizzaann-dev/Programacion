@@ -1,6 +1,7 @@
 package botanico;
 
-import java.util.Map;
+
+
 /** Ejercicio 3. Calendario de especies de plantas
  * @author Profesor
  */
@@ -11,7 +12,8 @@ public class Ejercicio03 {
         //----------------------------------------------
         //    Declaración de variables y constantes
         //----------------------------------------------
-        map 
+        Map <LocalDate, String> plantas = new HashMap();
+        
         // Constantes
         
         // Variables de entrada
@@ -27,6 +29,7 @@ public class Ejercicio03 {
         
         // No se piden datos al usuario, ya que se usa un número fijo de elementos aleatorios
         
+        System.out.println("CALENDARIO DE ESPECIES DE PLANTAS");
         System.out.println("CALENDARIO DE ESPECIES DE PLANTAS");
         System.out.println("---------------------------------");
         
