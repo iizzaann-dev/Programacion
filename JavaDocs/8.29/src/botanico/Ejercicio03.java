@@ -1,10 +1,8 @@
 package botanico;
 
-<<<<<<< HEAD
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
-=======
->>>>>>> 529eaa585a2ea5296f700582bf96fea1021a1690
 
 
 /** Ejercicio 3. Calendario de especies de plantas
@@ -13,16 +11,16 @@ import java.util.Map;
 public class Ejercicio03 {
 
     public static void main(String[] args) {
-        
+
+
+
         //----------------------------------------------
         //    Declaración de variables y constantes
         //----------------------------------------------
-<<<<<<< HEAD
-        Map plantas = new HashMap(LocalDate, String);
-=======
         Map <LocalDate, String> plantas = new HashMap();
+
+        //for (LocalDa)
         
->>>>>>> 529eaa585a2ea5296f700582bf96fea1021a1690
         // Constantes
         
         // Variables de entrada
