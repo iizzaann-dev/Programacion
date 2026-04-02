@@ -1,9 +1,11 @@
 package botanico;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.HashMap;
 import java.util.Map;
-
+import java.time.format.DateTimeFormatter;
 
 /** Ejercicio 3. Calendario de especies de plantas
  * @author Profesor
@@ -17,8 +19,16 @@ public class Ejercicio03 {
         //----------------------------------------------
         //    Declaración de variables y constantes
         //----------------------------------------------
-        Map <LocalDate, String> plantas = new HashMap();
+        Map <LocalDate, String> plantas = new HashMap <>();
 
+        LocalDate fechaActual = LocalDate.now();
+
+        DateTimeFormatter formato = new DateTimeFormatter.("dd/MM/yy");
+
+        for (Map.Entry <LocalDate, String> i : plantas.entrySet()){
+
+            System.out.println(i.getKey() + "" + i .getValue());
+        }
         //for (LocalDa)
         
         // Constantes
