@@ -8,6 +8,27 @@ public class main {
 
         ArrayList<Atleta> lista = new ArrayList<>(30);
 
+<<<<<<< HEAD
+        for (int contador = 0; contador <= 30; contador++) {
+        String nombre = "atleta" + contador;
+
+        Atleta atleta = null; 
+
+        while (atleta == null) {
+            int edad = (int) (Math.random() * 70);
+            double altura = 1.50 + Math.random() * 0.50;
+
+            try {
+                atleta = new Atleta(nombre, edad, altura);
+            } catch (IllegalArgumentException error1) {
+                System.out.println("Error: " + error1.getMessage() + " - Reintentando...");
+            }
+        }
+
+        lista.add(atleta);
+        System.out.println(atleta);
+        
+=======
         int sumaEdades = 0;
         double sumaEstaturas = 0;
         int acumuladorMenores = 0, acumuladorMayores = 0;
@@ -51,6 +72,7 @@ public class main {
             if (i.getAltura() > mediaEstaturas){
                 System.out.print(i.getNombre() + ", ");
             }
+>>>>>>> 852d4c4c31bb43e16157231e2411d691c4f51263
         }
     }
 
