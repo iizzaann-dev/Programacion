@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dfcfbef-b493-49da-b254-80ec543a9837" name="Changes" comment="fsf">
-      <change beforePath="$PROJECT_DIR$/../1/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/botanico/Ejercicio03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/botanico/Ejercicio03.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,16 +40,25 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Ejercicio01.executor": "Run",
+    "Application.Ejercicio03.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/DAW1/Desktop/Programacion/JavaDocs/8.29",
+    "last_opened_file_path": "C:/Users/carla/Desktop/Programacion/JavaDocs/8.29",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -65,6 +75,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774382088790</updated>
+      <workItem from="1775104749084" duration="408000" />
+      <workItem from="1775105183397" duration="39000" />
+      <workItem from="1775105336957" duration="1705000" />
     </task>
     <task id="LOCAL-00001" summary="hola como estas">
       <option name="closed" value="true" />
@@ -76,6 +89,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hola como estas" />

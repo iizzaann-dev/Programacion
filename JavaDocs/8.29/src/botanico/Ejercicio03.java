@@ -2,10 +2,11 @@ package botanico;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
 import java.util.HashMap;
 import java.util.Map;
-import java.time.format.DateTimeFormatter;
+import java.util.TreeMap;
+
+import botanico.Utilidades;
 
 /** Ejercicio 3. Calendario de especies de plantas
  * @author Profesor
@@ -19,16 +20,13 @@ public class Ejercicio03 {
         //----------------------------------------------
         //    Declaración de variables y constantes
         //----------------------------------------------
-        Map <LocalDate, String> plantas = new HashMap <>();
+        TreeMap <LocalDate, String> plantas = new TreeMap <>();
 
         LocalDate fechaActual = LocalDate.now();
 
-        DateTimeFormatter formato = new DateTimeFormatter.("dd/MM/yy");
+        DateTimeFormatter formato =  DateTimeFormatter.ofPattern("dd/MM/yy");
 
-        for (Map.Entry <LocalDate, String> i : plantas.entrySet()){
 
-            System.out.println(i.getKey() + "" + i .getValue());
-        }
         //for (LocalDa)
         
         // Constantes
@@ -47,6 +45,25 @@ public class Ejercicio03 {
         // No se piden datos al usuario, ya que se usa un número fijo de elementos aleatorios
         
         System.out.println("CALENDARIO DE ESPECIES DE PLANTAS");
+
+        for (int i = 0; i < 7; i++){
+            LocalDate fechaActualizada = fechaActual.plusDays(i);
+
+            String planta;
+            do {
+                planta = Utilidades.especiePlantaAleatoria();
+            }while (plantas.containsValue(planta));
+
+            plantas.put(fechaActualizada, planta);
+        }
+
+
+        for (Map.Entry <LocalDate, String> i : plantas.entrySet()){
+            String fechaFormateada = i.getKey().format(formato);
+            System.out.println(fechaFormateada + ": " + i .getValue());
+
+        }
+
         System.out.println("CALENDARIO DE ESPECIES DE PLANTAS");
         System.out.println("---------------------------------");
         
