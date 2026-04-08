@@ -70,7 +70,7 @@ public class Ejercicio04 {
         } else {
             System.out.println("\nCoincidencias:");
 
-            for (String planta : mapa.keySet()) {
+            for (String planta : mapa.keySet()) { //Devuelve todas las keys del map
                 System.out.println(planta + " == " + mapa.get(planta));
             }
         }
