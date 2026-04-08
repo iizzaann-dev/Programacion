@@ -16,7 +16,7 @@ public class Silla extends Asiento implements Ajustable {
 		
 		this.posicion = MIN_POSICION;
 	}
-	println
+	
 	@Override
 	public int obtenerPosicion() {
 		return posicion;
