@@ -26,7 +26,7 @@ public class PrincipalVehiculo {
 
         // 4. Calcular precio 5 días
         furgo1.calcularPrecio(5);
-
+        
         // 5. Modificar ITV camión
         camion1.setITV();
 
@@ -35,7 +35,7 @@ public class PrincipalVehiculo {
 
         // 7. Indica si la furgoneta tiene refrigeración
         furgo1.getRefrigeracion();
-
+        
         // 8. Modifica el valor del precio por día de la furgoneta
         furgo1.setPrecioDia(200);
 

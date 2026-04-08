@@ -20,16 +20,16 @@ public class Furgoneta extends Vehiculos{
 	//Atributos mutables del objeto
 	public boolean sistemaRefigeracion;
 	
-	public Furgoneta(String identificador, String matricula, LocalDate fechaMatriculacion, boolean ITV,
+	public Furgoneta(String matricula, LocalDate fechaMatriculacion, boolean ITV,
 			double precioDia, boolean sistemaRefigeracion, double volumen_max) {
-		super(identificador, matricula, fechaMatriculacion, ITV, precioDia);
+		super(matricula, fechaMatriculacion, ITV, precioDia);
 		
 		this.volumen_max = volumen_max;
 	
 	}
 	
 	public Furgoneta (double volumen_max, boolean sistemaRefrigeracion) {
-		this(volumen_max, sistemaRefrigeracion, super(identificador, matriculaDefault, fechaMatriculacionDefault, ITVDefault, precioDiaDefault));
+		this(matriculaDefault, fechaMatriculacionDefault, ITVDefault, precioDiaDefault, sistemaRefrigeracion, volumen_max);
 	}
 	
 	public double calcularPrecio (int numDias) throws IllegalArgumentException {

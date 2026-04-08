@@ -22,14 +22,14 @@ public class Vehiculos {
 	public static LocalDate fechaMatriculacion;
 
 	//Atributos inmutables del objeto
-	public final static String identificador = generarIdentificador();
+	public final String identificador;
 	
 	//Atributos mutables del objeto
 	public String matricula;
 	public boolean ITV;
 	public double precioDia; 
 	
-	public Vehiculos (String identificador, String matricula, LocalDate fechaMatriculacion, boolean ITV, double precioDia) 
+	public Vehiculos (String matricula, LocalDate fechaMatriculacion, boolean ITV, double precioDia) 
 		throws IllegalArgumentException{
 		
 		
@@ -39,6 +39,7 @@ public class Vehiculos {
 		
 		this.matricula = matricula;
 		this.fechaMatriculacion = fechaMatriculacion;
+		this.identificador = generarIdentificador();
 		this.ITV = ITV;
 		this.precioDia = precioDia;
 	}

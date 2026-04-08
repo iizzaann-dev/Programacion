@@ -19,10 +19,10 @@ public class Camion extends Vehiculos {
 	//Atributos mutables del objeto
 	public double capacidad_maxima;
 	
-	public Camion(String identificador, String matricula, LocalDate fechaMatriculacion, boolean ITV, double precioDia, double capacidad_maxima) 
+	public Camion(String matricula, LocalDate fechaMatriculacion, boolean ITV, double precioDia, double capacidad_maxima) 
 	throws IllegalArgumentException{
 		
-		super(identificador, matricula, fechaMatriculacion, ITV, precioDia);
+		super(matricula, fechaMatriculacion, ITV, precioDia);
 		
 		if (capacidad_maxima < CAPACIDAD_MIN) {
 			throw new IllegalArgumentException("No se puede establecer una capacidad menor a 0.5 toneladas");
@@ -37,11 +37,14 @@ public class Camion extends Vehiculos {
 	
 	
 	
-	public Camion (double capacidad_maxima) {
-		this(capacidad_maxima, identificador, matricula, fechaMatriculacionDefault, ITVDefault, precioDiaDefault);
-	} 
+	/*public Camion (double capacidad_maxima) {
+		this( capacidad_maxima,identificador, matricula, fechaMatriculacionDefault, ITVDefault, precioDiaDefault);
+		
+	} */
 	
-	
+	public Camion(double capacidad_maxima) {
+	    this(matriculaDefault, fechaMatriculacionDefault, ITVDefault, precioDiaDefault, capacidad_maxima);
+	}
 	
 
 	public double calcularPrecio (int numDias) throws IllegalArgumentException {
