@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e5bbb34-3f73-4b5a-aa9f-632c7c7023e6" name="Changes" comment="empezando el 8.30">
+    <list default="true" id="7e5bbb34-3f73-4b5a-aa9f-632c7c7023e6" name="Changes" comment="Hecho hasta el apartado 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal/operArrayList/EjercicioArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal/operArrayList/EjercicioArrayList.java" afterDir="false" />
     </list>
@@ -102,11 +102,20 @@
       <option name="project" value="LOCAL" />
       <updated>1775676367771</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Hecho hasta el apartado 3">
+      <option name="closed" value="true" />
+      <created>1775748984930</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775748984930</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="empezando el 8.30" />
-    <option name="LAST_COMMIT_MESSAGE" value="empezando el 8.30" />
+    <MESSAGE value="Hecho hasta el apartado 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hecho hasta el apartado 3" />
   </component>
 </project>
