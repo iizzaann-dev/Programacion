@@ -4,8 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e5bbb34-3f73-4b5a-aa9f-632c7c7023e6" name="Changes" comment="Hecho hasta el apartado 3">
+    <list default="true" id="7e5bbb34-3f73-4b5a-aa9f-632c7c7023e6" name="Changes" comment="vamos por el apartado 6 a medias">
+      <change afterPath="$PROJECT_DIR$/Resultados/Resultados.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist11_primerosRegistrosBorrados.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist12_registrosEliminadosMatematicas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist13_nombre_y_nota_media.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist14_1º ESO A_ordenado_por_nombre_descendente.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist14_1º ESO B_ordenado_por_nombre_descendente.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist14_1º ESO C_ordenado_por_nombre_descendente.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist14_1º ESO D_ordenado_por_nombre_descendente.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist14_1º ESO E_ordenado_por_nombre_descendente.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist15_1º ESO Anotas_medias.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist15_1º ESO Bnotas_medias.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist15_1º ESO Cnotas_medias.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist15_1º ESO Dnotas_medias.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist15_1º ESO Enotas_medias.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist16_1º ESO A_10_mejores_notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist16_1º ESO B_10_mejores_notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist16_1º ESO C_10_mejores_notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist16_1º ESO D_10_mejores_notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist16_1º ESO E_10_mejores_notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist3_notasPorGrupoYNombre.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/ArrayList/arraylist7_registroCompletoDeNotas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/HashSet/HashSet10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/HashSet/HashSet11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/HashSet/HashSet13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/HashSet/HashSet18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/HashSet/HashSet3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/HashSet/HashSet7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/Notas/notas1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/Notas/notas1hs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/Notas/notas2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/Notas/notas2hs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/Notas/notas3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/Notas/notas3hs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/TreeSet/TreeSet12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/TreeSet/TreeSet13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/TreeSet/TreeSet14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/TreeSet/TreeSet3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilidades/TreeSet/TreeSet7.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal/operArrayList/EjercicioArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal/operArrayList/EjercicioArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,29 +83,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.EjercicioArrayList.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DAW1/Desktop/Programacion/JavaDocs/8.30&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.EjercicioArrayList.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/DAW1/Desktop/Programacion/JavaDocs/8.30",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DAW1\Desktop\Programacion\JavaDocs\8.30\Resultados" />
+      <recent name="C:\Users\DAW1\Desktop\Programacion\JavaDocs\8.30\src" />
       <recent name="C:\Users\DAW1\Desktop\Programacion\JavaDocs\8.30" />
       <recent name="C:\Users\DAW1\Desktop\Programacion\JavaDocs\8.30\src\Utilidades\Notas" />
       <recent name="C:\Users\DAW1\Desktop\Programacion\JavaDocs\8.30\src\Utilidades\TreeSet" />
-      <recent name="C:\Users\DAW1\Desktop\Programacion\JavaDocs\8.30\src\Utilidades\HashSet" />
-      <recent name="C:\Users\DAW1\Desktop\Programacion\JavaDocs\8.30\src\Utilidades\ArrayList" />
     </key>
   </component>
   <component name="RunManager">
@@ -110,12 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1775748984930</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="vamos por el apartado 6 a medias">
+      <option name="closed" value="true" />
+      <created>1775751130108</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775751130108</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="empezando el 8.30" />
     <MESSAGE value="Hecho hasta el apartado 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hecho hasta el apartado 3" />
+    <MESSAGE value="vamos por el apartado 6 a medias" />
+    <option name="LAST_COMMIT_MESSAGE" value="vamos por el apartado 6 a medias" />
   </component>
 </project>
