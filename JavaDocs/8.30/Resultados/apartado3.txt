@@ -1,0 +1,129 @@
+Grupo = 1º ESO A, Apellido = Balbuena Martín, Nombre =  Paola, Matematicas = 3, Lengua = 3, Fisica = 7, Química = 3, Inglés = 4.
+Grupo = 1º ESO A, Apellido = Bintana , Nombre =  Esteban Martín, Matematicas = 4, Lengua = 3, Fisica = 4, Química = 4, Inglés = 5.
+Grupo = 1º ESO A, Apellido = Carrillo Segura, Nombre =  Félix, Matematicas = 6, Lengua = 6, Fisica = 8, Química = 2, Inglés = 8.
+Grupo = 1º ESO A, Apellido = Cotilla Florido, Nombre =  Alberto, Matematicas = 1, Lengua = 3, Fisica = 3, Química = 1, Inglés = 2.
+Grupo = 1º ESO A, Apellido = Farfán Aguilar, Nombre =  Francisco, Matematicas = 3, Lengua = 4, Fisica = 4, Química = 1, Inglés = 4.
+Grupo = 1º ESO A, Apellido = Farfán Aguilar, Nombre =  Juan José, Matematicas = 2, Lengua = 3, Fisica = 4, Química = 1, Inglés = 4.
+Grupo = 1º ESO A, Apellido = Gallego Arellano, Nombre =  Daniela, Matematicas = 6, Lengua = 6, Fisica = 8, Química = 5, Inglés = 6.
+Grupo = 1º ESO A, Apellido = García Benítez, Nombre =  Nazareth, Matematicas = 4, Lengua = 3, Fisica = 2, Química = 7, Inglés = 4.
+Grupo = 1º ESO A, Apellido = García Navarro, Nombre =  Macarena, Matematicas = 5, Lengua = 3, Fisica = 6, Química = 7, Inglés = 6.
+Grupo = 1º ESO A, Apellido = González Pereau, Nombre =  Saray, Matematicas = 5, Lengua = 6, Fisica = 6, Química = 4, Inglés = 7.
+Grupo = 1º ESO A, Apellido = González Pérez, Nombre =  Antonio, Matematicas = 8, Lengua = 9, Fisica = 8, Química = 5, Inglés = 6.
+Grupo = 1º ESO A, Apellido = González Pérez, Nombre =  Laura, Matematicas = 6, Lengua = 8, Fisica = 8, Química = 7, Inglés = 6.
+Grupo = 1º ESO A, Apellido = Heredia Mesa, Nombre =  Pablo, Matematicas = 3, Lengua = 4, Fisica = 5, Química = 5, Inglés = 6.
+Grupo = 1º ESO A, Apellido = Jiménez Benítez, Nombre =  Francheska, Matematicas = 2, Lengua = 1, Fisica = 4, Química = 5, Inglés = 3.
+Grupo = 1º ESO A, Apellido = Martínez Ruiz, Nombre =  Mónica, Matematicas = 1, Lengua = 2, Fisica = 3, Química = 4, Inglés = 3.
+Grupo = 1º ESO A, Apellido = Peralta , Nombre =  Maximiliano, Matematicas = 4, Lengua = 2, Fisica = 3, Química = 1, Inglés = 3.
+Grupo = 1º ESO A, Apellido = Plaza Gallego, Nombre =  Juan, Matematicas = 1, Lengua = 1, Fisica = 3, Química = 1, Inglés = 1.
+Grupo = 1º ESO A, Apellido = Pérez Pellisero, Nombre =  Braian, Matematicas = 6, Lengua = 4, Fisica = 6, Química = 5, Inglés = 7.
+Grupo = 1º ESO A, Apellido = Rielves Barea, Nombre =  Manuel, Matematicas = 5, Lengua = 6, Fisica = 7, Química = 1, Inglés = 5.
+Grupo = 1º ESO A, Apellido = Rueda Cruz, Nombre =  María, Matematicas = 6, Lengua = 5, Fisica = 6, Química = 5, Inglés = 5.
+Grupo = 1º ESO A, Apellido = Ruiz Jiménez, Nombre =  Rafael, Matematicas = 5, Lengua = 1, Fisica = 7, Química = 5, Inglés = 6.
+Grupo = 1º ESO A, Apellido = Russell , Nombre =  Natalie, Matematicas = 4, Lengua = 4, Fisica = 4, Química = 5, Inglés = 5.
+Grupo = 1º ESO A, Apellido = Vilches Moreno, Nombre =  Lola Isabel, Matematicas = 9, Lengua = 9, Fisica = 7, Química = 6, Inglés = 9.
+Grupo = 1º ESO A, Apellido = Virella Robles, Nombre =  Carolina, Matematicas = 4, Lengua = 4, Fisica = 5, Química = 4, Inglés = 5.
+Grupo = 1º ESO B, Apellido = Aguilera Delgado, Nombre =  Enrique, Matematicas = 8, Lengua = 8, Fisica = 9, Química = 6, Inglés = 8.
+Grupo = 1º ESO B, Apellido = Benítez Gaitán, Nombre =  Juan Cruz, Matematicas = 5, Lengua = 6, Fisica = 8, Química = 3, Inglés = 6.
+Grupo = 1º ESO B, Apellido = Cordero Benítez, Nombre =  Alejandro, Matematicas = 2, Lengua = 3, Fisica = 2, Química = 1, Inglés = 4.
+Grupo = 1º ESO B, Apellido = Cruz Pino, Nombre =  Raquel, Matematicas = 4, Lengua = 6, Fisica = 4, Química = 5, Inglés = 4.
+Grupo = 1º ESO B, Apellido = Domínguez Tirado, Nombre =  José, Matematicas = 5, Lengua = 6, Fisica = 9, Química = 5, Inglés = 6.
+Grupo = 1º ESO B, Apellido = Donaire Rodríguez, Nombre =  Miguel Ángel, Matematicas = 6, Lengua = 4, Fisica = 8, Química = 2, Inglés = 7.
+Grupo = 1º ESO B, Apellido = Donaire Vergara, Nombre =  Eva María, Matematicas = 6, Lengua = 5, Fisica = 5, Química = 3, Inglés = 7.
+Grupo = 1º ESO B, Apellido = Duarte Durán, Nombre =  Alba, Matematicas = 2, Lengua = 3, Fisica = 4, Química = 1, Inglés = 3.
+Grupo = 1º ESO B, Apellido = Durán , Nombre =  Mariano, Matematicas = 6, Lengua = 4, Fisica = 6, Química = 2, Inglés = 3.
+Grupo = 1º ESO B, Apellido = El Mazani , Nombre =  Mohammed, Matematicas = 3, Lengua = 4, Fisica = 5, Química = 5, Inglés = 3.
+Grupo = 1º ESO B, Apellido = Garrido Delgado, Nombre =  Pablo, Matematicas = 3, Lengua = 4, Fisica = 7, Química = 3, Inglés = 6.
+Grupo = 1º ESO B, Apellido = Guerra Cano, Nombre =  Tamara, Matematicas = 1, Lengua = 3, Fisica = 3, Química = 5, Inglés = 2.
+Grupo = 1º ESO B, Apellido = Hurtado García, Nombre =  Carmen María, Matematicas = 4, Lengua = 4, Fisica = 4, Química = 5, Inglés = 3.
+Grupo = 1º ESO B, Apellido = Lima Franco, Nombre =  Laura, Matematicas = 4, Lengua = 2, Fisica = 5, Química = 1, Inglés = 3.
+Grupo = 1º ESO B, Apellido = Luque González, Nombre =  Christian, Matematicas = 10, Lengua = 9, Fisica = 9, Química = 5, Inglés = 6.
+Grupo = 1º ESO B, Apellido = Martín Aguilar, Nombre =  Paula María, Matematicas = 2, Lengua = 3, Fisica = 5, Química = 4, Inglés = 4.
+Grupo = 1º ESO B, Apellido = Martínez Calderero, Nombre =  Aarón, Matematicas = 6, Lengua = 4, Fisica = 5, Química = 1, Inglés = 6.
+Grupo = 1º ESO B, Apellido = Martínez Martín, Nombre =  Fabiola, Matematicas = 2, Lengua = 2, Fisica = 4, Química = 1, Inglés = 5.
+Grupo = 1º ESO B, Apellido = Morales Flores, Nombre =  Víctor, Matematicas = 1, Lengua = 2, Fisica = 1, Química = 1, Inglés = 1.
+Grupo = 1º ESO B, Apellido = Peula Cordero, Nombre =  Yazmina, Matematicas = 5, Lengua = 6, Fisica = 4, Química = 5, Inglés = 5.
+Grupo = 1º ESO B, Apellido = Ramírez Farfán, Nombre =  Carmen, Matematicas = 7, Lengua = 7, Fisica = 4, Química = 4, Inglés = 6.
+Grupo = 1º ESO B, Apellido = Requena Carrasco, Nombre =  Rafael, Matematicas = 1, Lengua = 4, Fisica = 4, Química = 5, Inglés = 2.
+Grupo = 1º ESO B, Apellido = Robles Ortiz, Nombre =  Sofía, Matematicas = 5, Lengua = 4, Fisica = 6, Química = 5, Inglés = 7.
+Grupo = 1º ESO B, Apellido = Rueda Calzada, Nombre =  Laura, Matematicas = 9, Lengua = 8, Fisica = 9, Química = 5, Inglés = 7.
+Grupo = 1º ESO B, Apellido = Salado Arcas, Nombre =  María del Carmen, Matematicas = 2, Lengua = 3, Fisica = 4, Química = 1, Inglés = 3.
+Grupo = 1º ESO B, Apellido = Salas Márquez, Nombre =  Jennifer, Matematicas = 1, Lengua = 3, Fisica = 4, Química = 1, Inglés = 3.
+Grupo = 1º ESO B, Apellido = Sánchez Ortiz, Nombre =  Álvaro José, Matematicas = 6, Lengua = 6, Fisica = 9, Química = 3, Inglés = 6.
+Grupo = 1º ESO C, Apellido = Aranda Vázquez, Nombre =  José, Matematicas = 3, Lengua = 3, Fisica = 3, Química = 1, Inglés = 2.
+Grupo = 1º ESO C, Apellido = Benedetti , Nombre =  Débora, Matematicas = 2, Lengua = 2, Fisica = 4, Química = 5, Inglés = 2.
+Grupo = 1º ESO C, Apellido = Caro Ruiz, Nombre =  Melany, Matematicas = 2, Lengua = 2, Fisica = 5, Química = 1, Inglés = 4.
+Grupo = 1º ESO C, Apellido = Castillo Alcázar, Nombre =  Alejandro, Matematicas = 4, Lengua = 7, Fisica = 5, Química = 3, Inglés = 5.
+Grupo = 1º ESO C, Apellido = Cordón López, Nombre =  Rocío, Matematicas = 3, Lengua = 3, Fisica = 4, Química = 1, Inglés = 2.
+Grupo = 1º ESO C, Apellido = Fernández Rico, Nombre =  Paula, Matematicas = 2, Lengua = 3, Fisica = 3, Química = 1, Inglés = 3.
+Grupo = 1º ESO C, Apellido = Jiménez Rueda, Nombre =  Marina, Matematicas = 2, Lengua = 4, Fisica = 5, Química = 1, Inglés = 3.
+Grupo = 1º ESO C, Apellido = Mantero González, Nombre =  Juan, Matematicas = 8, Lengua = 4, Fisica = 5, Química = 1, Inglés = 5.
+Grupo = 1º ESO C, Apellido = Martín Soler, Nombre =  José Manuel, Matematicas = 3, Lengua = 4, Fisica = 5, Química = 3, Inglés = 4.
+Grupo = 1º ESO C, Apellido = Menaique Álvarez, Nombre =  Celia María, Matematicas = 3, Lengua = 4, Fisica = 5, Química = 5, Inglés = 5.
+Grupo = 1º ESO C, Apellido = Mora Castillo, Nombre =  Paola, Matematicas = 5, Lengua = 4, Fisica = 5, Química = 5, Inglés = 4.
+Grupo = 1º ESO C, Apellido = Ramírez Pérez, Nombre =  David, Matematicas = 4, Lengua = 3, Fisica = 4, Química = 3, Inglés = 3.
+Grupo = 1º ESO C, Apellido = Recchia , Nombre =  María Fiorella, Matematicas = 4, Lengua = 3, Fisica = 3, Química = 1, Inglés = 5.
+Grupo = 1º ESO C, Apellido = Rendón Alba, Nombre =  Jorge Luis, Matematicas = 3, Lengua = 3, Fisica = 5, Química = 1, Inglés = 2.
+Grupo = 1º ESO C, Apellido = Roberto Jaimes, Nombre =  Kelly Ximena, Matematicas = 5, Lengua = 5, Fisica = 5, Química = 5, Inglés = 3.
+Grupo = 1º ESO C, Apellido = Roberto Jaimes, Nombre =  Neila Fernanda, Matematicas = 3, Lengua = 5, Fisica = 4, Química = 5, Inglés = 4.
+Grupo = 1º ESO C, Apellido = Rodríguez Arroyo, Nombre =  Alba María, Matematicas = 2, Lengua = 3, Fisica = 4, Química = 1, Inglés = 2.
+Grupo = 1º ESO C, Apellido = Romero Farfán, Nombre =  Estefanía, Matematicas = 2, Lengua = 2, Fisica = 3, Química = 1, Inglés = 1.
+Grupo = 1º ESO C, Apellido = Rueda Vega, Nombre =  Ana Carmen, Matematicas = 3, Lengua = 6, Fisica = 4, Química = 3, Inglés = 5.
+Grupo = 1º ESO C, Apellido = Ruiz Rueda, Nombre =  Sebastián, Matematicas = 3, Lengua = 3, Fisica = 6, Química = 3, Inglés = 3.
+Grupo = 1º ESO C, Apellido = Salas Márquez, Nombre =  Desiree, Matematicas = 2, Lengua = 3, Fisica = 4, Química = 1, Inglés = 4.
+Grupo = 1º ESO C, Apellido = Salazar Carrera, Nombre =  Juana María, Matematicas = 2, Lengua = 3, Fisica = 3, Química = 1, Inglés = 3.
+Grupo = 1º ESO C, Apellido = Tomé Cordero, Nombre =  Virginia, Matematicas = 2, Lengua = 3, Fisica = 4, Química = 1, Inglés = 2.
+Grupo = 1º ESO C, Apellido = Vegas Carrasco, Nombre =  María Encarnación, Matematicas = 3, Lengua = 2, Fisica = 2, Química = 1, Inglés = 3.
+Grupo = 1º ESO C, Apellido = Villar Risco, Nombre =  Omar, Matematicas = 8, Lengua = 8, Fisica = 8, Química = 3, Inglés = 9.
+Grupo = 1º ESO C, Apellido = Villatoro Postigo, Nombre =  Adrián, Matematicas = 4, Lengua = 6, Fisica = 7, Química = 3, Inglés = 4.
+Grupo = 1º ESO C, Apellido = Wilson , Nombre =  Luke, Matematicas = 1, Lengua = 2, Fisica = 4, Química = 3, Inglés = 1.
+Grupo = 1º ESO C, Apellido = Zoodsma Villalón, Nombre =  Natali, Matematicas = 2, Lengua = 3, Fisica = 4, Química = 5, Inglés = 3.
+Grupo = 1º ESO C, Apellido = Álvarez López, Nombre =  Nohemi, Matematicas = 2, Lengua = 2, Fisica = 2, Química = 5, Inglés = 2.
+Grupo = 1º ESO D, Apellido = Benítez Maya, Nombre =  Luciana, Matematicas = 7, Lengua = 6, Fisica = 7, Química = 6, Inglés = 8.
+Grupo = 1º ESO D, Apellido = Castillo Viñolo, Nombre =  Francisco, Matematicas = 3, Lengua = 3, Fisica = 4, Química = 1, Inglés = 4.
+Grupo = 1º ESO D, Apellido = Cruz Portillo, Nombre =  Francisco, Matematicas = 2, Lengua = 3, Fisica = 4, Química = 4, Inglés = 3.
+Grupo = 1º ESO D, Apellido = Fontaneda Macías, Nombre =  Borja, Matematicas = 7, Lengua = 7, Fisica = 7, Química = 5, Inglés = 4.
+Grupo = 1º ESO D, Apellido = García Bernal, Nombre =  María Esther, Matematicas = 9, Lengua = 8, Fisica = 9, Química = 5, Inglés = 8.
+Grupo = 1º ESO D, Apellido = García López, Nombre =  Elena, Matematicas = 6, Lengua = 7, Fisica = 6, Química = 5, Inglés = 7.
+Grupo = 1º ESO D, Apellido = García Romero, Nombre =  Álvaro, Matematicas = 3, Lengua = 4, Fisica = 6, Química = 5, Inglés = 4.
+Grupo = 1º ESO D, Apellido = García Sánchez, Nombre =  Carmen, Matematicas = 4, Lengua = 3, Fisica = 4, Química = 1, Inglés = 7.
+Grupo = 1º ESO D, Apellido = González Bernal, Nombre =  Cristóbal, Matematicas = 4, Lengua = 6, Fisica = 7, Química = 5, Inglés = 7.
+Grupo = 1º ESO D, Apellido = Hernández Jack, Nombre =  Irene, Matematicas = 4, Lengua = 4, Fisica = 6, Química = 5, Inglés = 8.
+Grupo = 1º ESO D, Apellido = López Muro, Nombre =  Rosario, Matematicas = 3, Lengua = 3, Fisica = 4, Química = 4, Inglés = 3.
+Grupo = 1º ESO D, Apellido = Navarro García, Nombre =  María Azahara, Matematicas = 4, Lengua = 3, Fisica = 5, Química = 3, Inglés = 7.
+Grupo = 1º ESO D, Apellido = Núñez Ramírez, Nombre =  Paula, Matematicas = 3, Lengua = 2, Fisica = 4, Química = 4, Inglés = 4.
+Grupo = 1º ESO D, Apellido = Reina Romero, Nombre =  José Daniel, Matematicas = 8, Lengua = 6, Fisica = 9, Química = 4, Inglés = 4.
+Grupo = 1º ESO D, Apellido = Sales Briales, Nombre =  Paloma, Matematicas = 4, Lengua = 4, Fisica = 6, Química = 1, Inglés = 4.
+Grupo = 1º ESO D, Apellido = Serrano Castillo, Nombre =  José Antonio, Matematicas = 2, Lengua = 4, Fisica = 9, Química = 3, Inglés = 5.
+Grupo = 1º ESO D, Apellido = Sánchez López, Nombre =  Alba, Matematicas = 3, Lengua = 2, Fisica = 4, Química = 3, Inglés = 4.
+Grupo = 1º ESO D, Apellido = Vargas Santiago, Nombre =  Samuel, Matematicas = 1, Lengua = 1, Fisica = 3, Química = 1, Inglés = 1.
+Grupo = 1º ESO D, Apellido = Álvarez Rodríguez, Nombre =  Dayana Vanessa, Matematicas = 6, Lengua = 5, Fisica = 6, Química = 5, Inglés = 6.
+Grupo = 1º ESO E, Apellido = Abdeselam Blanco, Nombre =  Hillary, Matematicas = 7, Lengua = 4, Fisica = 8, Química = 5, Inglés = 6.
+Grupo = 1º ESO E, Apellido = Amaya Guillén, Nombre =  José Pablo, Matematicas = 5, Lengua = 6, Fisica = 4, Química = 5, Inglés = 5.
+Grupo = 1º ESO E, Apellido = Artacho Silva, Nombre =  Mar, Matematicas = 6, Lengua = 6, Fisica = 8, Química = 6, Inglés = 8.
+Grupo = 1º ESO E, Apellido = Becerra García, Nombre =  Javier, Matematicas = 5, Lengua = 5, Fisica = 7, Química = 3, Inglés = 5.
+Grupo = 1º ESO E, Apellido = Benítez Berenjeno, Nombre =  Laura, Matematicas = 9, Lengua = 8, Fisica = 7, Química = 6, Inglés = 9.
+Grupo = 1º ESO E, Apellido = Bernat Rodríguez, Nombre =  Sandra, Matematicas = 7, Lengua = 4, Fisica = 6, Química = 1, Inglés = 7.
+Grupo = 1º ESO E, Apellido = Bravo Guzmán, Nombre =  Mireya, Matematicas = 4, Lengua = 4, Fisica = 6, Química = 5, Inglés = 5.
+Grupo = 1º ESO E, Apellido = Cañas Arcos, Nombre =  Esther, Matematicas = 7, Lengua = 6, Fisica = 7, Química = 5, Inglés = 9.
+Grupo = 1º ESO E, Apellido = Cecilio Gibaja, Nombre =  Sara, Matematicas = 4, Lengua = 3, Fisica = 4, Química = 2, Inglés = 3.
+Grupo = 1º ESO E, Apellido = Delgado Rodríguez, Nombre =  Daniel, Matematicas = 8, Lengua = 6, Fisica = 6, Química = 5, Inglés = 6.
+Grupo = 1º ESO E, Apellido = Farfán González, Nombre =  María de la Paloma, Matematicas = 4, Lengua = 4, Fisica = 7, Química = 5, Inglés = 5.
+Grupo = 1º ESO E, Apellido = Moreno Santamaría, Nombre =  José Luis, Matematicas = 3, Lengua = 3, Fisica = 6, Química = 4, Inglés = 3.
+Grupo = 1º ESO E, Apellido = Moreno Vázquez, Nombre =  Tomás, Matematicas = 6, Lengua = 7, Fisica = 7, Química = 5, Inglés = 6.
+Grupo = 1º ESO E, Apellido = Muñoz Bellido, Nombre =  Sandra, Matematicas = 3, Lengua = 2, Fisica = 4, Química = 1, Inglés = 3.
+Grupo = 1º ESO E, Apellido = Perea Sierra, Nombre =  Antonio Mateo, Matematicas = 4, Lengua = 5, Fisica = 7, Química = 3, Inglés = 3.
+Grupo = 1º ESO E, Apellido = Plaza Pérez, Nombre =  Nuria María, Matematicas = 6, Lengua = 4, Fisica = 8, Química = 3, Inglés = 6.
+Grupo = 1º ESO E, Apellido = Postigo Vázquez, Nombre =  Salvador, Matematicas = 3, Lengua = 6, Fisica = 5, Química = 3, Inglés = 4.
+Grupo = 1º ESO E, Apellido = Prieto Granja, Nombre =  Alicia, Matematicas = 4, Lengua = 3, Fisica = 4, Química = 4, Inglés = 3.
+Grupo = 1º ESO E, Apellido = Puertas Moreno, Nombre =  Andrea, Matematicas = 6, Lengua = 6, Fisica = 6, Química = 3, Inglés = 6.
+Grupo = 1º ESO E, Apellido = Rico Pinazo, Nombre =  Pedro, Matematicas = 9, Lengua = 9, Fisica = 10, Química = 5, Inglés = 10.
+Grupo = 1º ESO E, Apellido = Rodríguez Baro, Nombre =  Irene, Matematicas = 4, Lengua = 6, Fisica = 6, Química = 5, Inglés = 7.
+Grupo = 1º ESO E, Apellido = Rodríguez Horcajo, Nombre =  Noelia, Matematicas = 8, Lengua = 9, Fisica = 7, Química = 4, Inglés = 9.
+Grupo = 1º ESO E, Apellido = Rodríguez Márquez, Nombre =  Ezequiel, Matematicas = 8, Lengua = 8, Fisica = 8, Química = 5, Inglés = 9.
+Grupo = 1º ESO E, Apellido = Romero González, Nombre =  Nazaret, Matematicas = 7, Lengua = 4, Fisica = 6, Química = 4, Inglés = 7.
+Grupo = 1º ESO E, Apellido = Rueda Blanco, Nombre =  Oscar, Matematicas = 7, Lengua = 8, Fisica = 8, Química = 5, Inglés = 8.
+Grupo = 1º ESO E, Apellido = Serrano Doña, Nombre =  Ismael, Matematicas = 7, Lengua = 8, Fisica = 7, Química = 6, Inglés = 7.
+Grupo = 1º ESO E, Apellido = Solano Garrido, Nombre =  Alberto, Matematicas = 5, Lengua = 3, Fisica = 4, Química = 2, Inglés = 3.
+Grupo = 1º ESO E, Apellido = Solera Benítez, Nombre =  Paola, Matematicas = 5, Lengua = 5, Fisica = 6, Química = 4, Inglés = 5.
+Grupo = 1º ESO E, Apellido = Sánchez Solano, Nombre =  Ana Tadea, Matematicas = 7, Lengua = 8, Fisica = 7, Química = 4, Inglés = 9.
+Grupo = 1º ESO E, Apellido = Vega Jiménez, Nombre =  Ana María, Matematicas = 6, Lengua = 7, Fisica = 6, Química = 4, Inglés = 3.
