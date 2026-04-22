@@ -31,6 +31,30 @@
             return grupo;
         }
 
+        public String getNombre(){
+            return nombre;
+        }
+
+        public int getNotaMatematicas (){
+            return matematicas;
+        }
+
+        public int getLengua() {
+            return lengua;
+        }
+
+        public int getFisica() {
+            return fisica;
+        }
+
+        public int getQuimica() {
+            return quimica;
+        }
+
+        public int getIngles() {
+            return ingles;
+        }
+
         @Override
         public String toString() {
             return  "Grupo = " + grupo + ", Apellido = " + apellido + ", Nombre = " + nombre + ", Matematicas = " + matematicas + ", Lengua = " + lengua +
