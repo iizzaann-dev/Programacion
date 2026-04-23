@@ -1,10 +1,15 @@
-    package Principal.operArrayList;
+package Principal.operArrayList;
+
+import java.io.*;
+
 
     public class Alumnos {
 
-        String grupo;
-        String nombre;
-        String apellido;
+        private FileInputStream file;
+        private ObjectInputStream input;
+        public String grupo;
+        public String nombre;
+        public String apellido;
         public int matematicas;
         public int lengua;
         public int fisica;
@@ -62,4 +67,30 @@
 
 
         }
+
+        public void abrir() throws IOException{
+            file = new FileInputStream("");
+            input = new ObjectInputStream(file);
+        }
+
+        public void cerrar() throws IOException{
+            if(input == null){
+                input.close();
+            }
+        }
+
+        public Alumnos leer () throws IOException, ClassNotFoundException{
+            Alumnos alumno = null;
+            if(input == null){
+                try{
+                    alumno = (Alumnos) input.readObject();
+
+                }catch (EOFException eof){
+
+                }
+            }
+
+            return alumno;
+        }
+
     }
