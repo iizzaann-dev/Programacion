@@ -47,16 +47,6 @@ public class Ejercicio04 {
                 mapa.get(planta).add(i);
             }
         }
-
-
-        // No se piden datos al usuario, ya que se usa un número fijo de elementos aleatorios
-
-
-        System.out.println("CLASIFICACIÓN DE COINCIDENTES");
-        System.out.println("-----------------------------");
-
-        // Mostrar listas
-        System.out.println("\nLista 1:");
         System.out.println(lista1);
 
         System.out.println("\nLista 2:");

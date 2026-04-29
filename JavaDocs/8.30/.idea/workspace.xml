@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e5bbb34-3f73-4b5a-aa9f-632c7c7023e6" name="Changes" comment="hecho hasta el ejercicio 13 de arrayList">
+      <change beforePath="$PROJECT_DIR$/../1/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1/bin/paqueteDePrubea/JavaDePrueba.class" beforeDir="false" afterPath="$PROJECT_DIR$/../1/bin/paqueteDePrubea/JavaDePrueba.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1/bin/prueba.class" beforeDir="false" afterPath="$PROJECT_DIR$/../1/bin/prueba.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8.29/src/botanico/Ejercicio04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8.29/src/botanico/Ejercicio04.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principal/operArrayList/Alumnos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal/operArrayList/Alumnos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rico_Izan_899/src/Rico1/Coche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rico_Izan_899/src/Rico1/Moto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rico_Izan_899/src/Rico1/Vehiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rico_Izan_899/src/Rico1/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rico_Izan_899/src/Rico2/coleccion_de_empleados.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +40,13 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/iizzaann-dev/Programacion&quot;,
-    &quot;accountId&quot;: &quot;a5a7edaf-6820-42e9-a98d-0ca560063ab8&quot;
+    &quot;accountId&quot;: &quot;5dde5976-4513-4929-9561-d5d45ed214a9&quot;
   }
 }</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -48,17 +60,21 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Application.EjercicioArrayList.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DAW1/Desktop/Programacion/JavaDocs/8.30&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/izanp/Desktop/DAW1/Programacion/JavaDocs/8.30&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -84,7 +100,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
