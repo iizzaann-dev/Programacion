@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>RectanguloTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">ProyectoUnit (8 may 2026 18:48:26)</a> &gt; <a href="../../index.html" class="el_group">ProyectoUnit</a> &gt; <a href="../index.html" class="el_bundle">src/test/java</a> &gt; <a href="index.source.html" class="el_package">calculadora</a> &gt; <span class="el_source">RectanguloTest.java</span></div><h1>RectanguloTest.java</h1><pre class="source lang-java linenums">package calculadora;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+<span class="fc" id="L6">class RectanguloTest {</span>
+
+    // positivos
+    @Test
+    void testPositivos() {
+<span class="fc" id="L11">        Rectangulo r = new Rectangulo(4, 5);</span>
+<span class="fc" id="L12">        assertEquals(20, r.area());</span>
+<span class="fc" id="L13">        assertEquals(18, r.perimetro());</span>
+<span class="fc" id="L14">    }</span>
+
+    // negativos
+    @Test
+    void testNegativos() {
+<span class="fc" id="L19">        Rectangulo r = new Rectangulo(-4, 5);</span>
+<span class="fc" id="L20">        assertEquals(-1, r.area());</span>
+<span class="fc" id="L21">        assertEquals(-1, r.perimetro());</span>
+<span class="fc" id="L22">    }</span>
+
+    // ceros
+    @Test
+    void testCeros() {
+<span class="fc" id="L27">        Rectangulo r = new Rectangulo(0, 5);</span>
+<span class="fc" id="L28">        assertEquals(0, r.area());</span>
+<span class="fc" id="L29">        assertEquals(0, r.perimetro());</span>
+<span class="fc" id="L30">    }</span>
+
+    // aserciones erróneas (intencional)
+    @Test
+    void testFallosIntencionales() {
+<span class="fc" id="L35">        Rectangulo r = new Rectangulo(4, 5);</span>
+
+<span class="nc" id="L37">        assertEquals(999, r.area());</span>
+<span class="nc" id="L38">        assertEquals(999, r.perimetro());</span>
+<span class="nc" id="L39">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.14.202510111229</span>ProyectoUnit (8 may 2026 18:48:26)</div></body></html>
