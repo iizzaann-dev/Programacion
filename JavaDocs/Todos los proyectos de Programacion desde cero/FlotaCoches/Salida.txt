@@ -1,0 +1,20 @@
+Matricula: 1234ABC Marca: Volvo Coste: 6300.0 
+
+Matricula: 5678DEF Marca: Scania Coste: 9300.0 
+
+Matricula: 9012GHI Marca: Mercedes Coste: 5050.0 
+
+Matricula: 3456JKL Marca: MAN Coste: 11300.0 
+
+Matricula: 7890MNO Marca: Renault Coste: 230.0 
+
+Matricula: 2345PQR Marca: Ford Coste: 180.0 
+
+Matricula: 6789STU Marca: Volkswagen Coste: 210.0 
+
+Matricula: 1234VWX Marca: Peugeot Coste: 240.0 
+
+Matricula: 5678YZA Marca: Citroën Coste: 190.0 
+
+Matricula: 8901BCD Marca: Iveco Coste: 7800.0 
+

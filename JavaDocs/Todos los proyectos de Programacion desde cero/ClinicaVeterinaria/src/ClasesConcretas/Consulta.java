@@ -11,16 +11,16 @@ public class Consulta {
 	private Animal animal;
 	private ArrayList <Tratamiento> tratamientos;
 	
-	public Consulta (String fecha, Animal animal, ArrayList <Tratamiento> tratamientos) throws CapacidadExcedidaException {
-		
-		if(tratamientos.size() > 5) {
-			throw new CapacidadExcedidaException("5");
-		}
-		
-		this.fecha = fecha;
-		this.animal = animal;
-		this.tratamientos = tratamientos;
-		
+	public Consulta(String fecha, Animal animal) {
+
+	    this.fecha = fecha;
+	    this.animal = animal;
+	    this.tratamientos = new ArrayList<>();
+	    
+	    for(Tratamiento t : tratamientos) {
+	    	agregarTratamientos(t);
+	    }
+
 	}
 	
 	public double calcularCosteTotal () {
@@ -51,6 +51,14 @@ public class Consulta {
 		return tratamientos;
 	}
 	
-	
+	public void agregarTratamiento(Tratamiento t)
+	        throws CapacidadExcedidaException {
+
+	    if (this.tratamientos.size() >= 5) {
+	        throw new CapacidadExcedidaException("5");
+	    }
+
+	    this.tratamientos.add(t);
+	}
 	
 }

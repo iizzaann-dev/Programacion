@@ -12,7 +12,7 @@ public class Main {
 		
 		//Ejercicio 2
 		try {
-			tienda1.cargarCatalogo("src/Documentos/Videojuegos.txt");
+			tienda1.cargarCatalogo("./Documentos/Videojuegos.txt"); 
 		} catch (FileNotFoundException e1) {
 			System.out.println("No se ha encontrado el archivo.");
 
