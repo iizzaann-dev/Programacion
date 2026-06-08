@@ -1,0 +1,10 @@
+LIBRO;978-84-01-001;El nombre del viento;Patrick Rothfuss;2007;FANTASIA;14.95;662
+LIBRO;978-84-01-002;El temor de un hombre sabio;Patrick Rothfuss;2011;FANTASIA;16.50;994
+LIBRO;978-84-01-003;Sapiens;Yuval Noah Harari;2011;HISTORIA;12.95;443
+LIBRO;978-84-01-004;Una breve historia del tiempo;Stephen Hawking;1988;CIENCIA;10.50;212
+LIBRO;978-84-01-005;El universo elegante;Brian Greene;1999;TECNOLOGIA;13.75;368
+LIBRO;978-84-01-006;Harry Potter y la piedra filosofal;J.K. Rowling;1997;INFANTIL;9.95;309
+REVISTA;R-0001;National Geographic;VV.AA.;2023;CIENCIA;8.50;MENSUAL
+REVISTA;R-0002;Muy Interesante;VV.AA.;2023;CIENCIA;5.95;MENSUAL
+REVISTA;R-0003;Historia y Vida;VV.AA.;2022;HISTORIA;6.50;MENSUAL
+REVISTA;R-0004;Hola Tecnología;VV.AA.;2024;TECNOLOGIA;3.75;SEMANAL

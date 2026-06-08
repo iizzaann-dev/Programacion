@@ -8,7 +8,9 @@ public class Main {
 	public static void main(String[] args) {
 
 		double[][] servidoresNas = new double[4][];
-
+		
+	
+		
 		for (int filas = 0; filas < servidoresNas.length; filas++) {
 			int random = (int) (Math.random() * (10 - 1 + 1) + 1);
 			servidoresNas[filas] = new double[random];
